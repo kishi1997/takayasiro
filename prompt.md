@@ -73,3 +73,9 @@ margin-inline: auto;
 padding: 0 4%;
 }
 }
+
+## 追跡削除コマンド
+
+git rm themes/yaotemp/css/design.css
+git rm themes/yaotemp/css/design.scss
+git rm themes/yaotemp/css/design.css.map
