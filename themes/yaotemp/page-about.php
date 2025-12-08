@@ -129,7 +129,7 @@
                 <div class="c-2col__list">
                     <article class="c-2col__item">
                         <figure class="c-2col__item--img">
-                            <img src="<?php bloginfo('template_url');?>/img/about-reason-img1.jpg" alt="ご自宅で打ち合わせをするご家族とスタッフ">
+                            <img src="<?php bloginfo('template_url');?>/img/about-commitment-img1.jpg" alt="工事内容についてスタッフが女性に直接説明している様子">
                         </figure>
                         <div class="c-2col__item--body">
                             <h3 class="c-2col__item--title">
@@ -145,7 +145,7 @@
                     </article>
                     <article class="c-2col__item">
                         <figure class="c-2col__item--img">
-                            <img src="<?php bloginfo('template_url');?>/img/about-reason-img1.jpg" alt="ご自宅で打ち合わせをするご家族とスタッフ">
+                            <img src="<?php bloginfo('template_url');?>/img/about-commitment-img2.jpg" alt="スタッフがご依頼者と打ち合わせをしながらお見積り相談をしている様子">
                         </figure>
                         <div class="c-2col__item--body">
                             <h3 class="c-2col__item--title">
@@ -164,7 +164,7 @@
                     </article>
                     <article class="c-2col__item">
                         <figure class="c-2col__item--img">
-                            <img src="<?php bloginfo('template_url');?>/img/about-reason-img1.jpg" alt="ご自宅で打ち合わせをするご家族とスタッフ">
+                            <img src="<?php bloginfo('template_url');?>/img/about-commitment-img3.jpg" alt="図面を見ながら担当者が工事計画をご提案している様子">
                         </figure>
                         <div class="c-2col__item--body">
                             <h3 class="c-2col__item--title">詳細で明確な見積が無料</h3>
@@ -177,7 +177,7 @@
                     </article>
                     <article class="c-2col__item">
                         <figure class="c-2col__item--img">
-                            <img src="<?php bloginfo('template_url');?>/img/about-reason-img1.jpg" alt="ご自宅で打ち合わせをするご家族とスタッフ">
+                            <img src="<?php bloginfo('template_url');?>/img/about-commitment-img4.jpg" alt="お客様ご夫婦へ工事内容を丁寧に説明する担当者の様子">
                         </figure>
                         <div class="c-2col__item--body">
                             <h3 class="c-2col__item--title">しつこい営業は一切しておりません</h3>
@@ -189,7 +189,7 @@
                     </article>
                     <article class="c-2col__item">
                         <figure class="c-2col__item--img">
-                            <img src="<?php bloginfo('template_url');?>/img/about-reason-img1.jpg" alt="ご自宅で打ち合わせをするご家族とスタッフ">
+                            <img src="<?php bloginfo('template_url');?>/img/about-commitment-img5.jpg" alt="建築図面と住宅模型を使って工事提案を行うイメージ写真">
                         </figure>
                         <div class="c-2col__item--body">
                             <h3 class="c-2col__item--title">
