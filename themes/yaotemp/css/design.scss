@@ -97,6 +97,73 @@ body {
     pointer-events: none;
   }
 }
+
+// 共通ボタン
+.c-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 220px;
+  margin: 0 auto;
+  padding: 16px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #5d4f3a;
+  border-radius: 32px;
+  z-index: 1;
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+.c-btn--circle {
+  position: absolute;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .c-btn--circle-arrow {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+  }
+  .c-btn--circle-arrow img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+.c-btn:hover .c-btn--circle-arrow img {
+  animation: 0.4s ease 0s 1 normal none running lefttoright;
+}
+@keyframes lefttoright {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  49% {
+    transform: translateX(110%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-110%);
+    opacity: 0;
+  }
+  51% {
+    transform: translateX(-110%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 // サークルラインありボタン
 .c-btn--line {
   display: block;
@@ -165,71 +232,6 @@ body {
       }
     }
   }  
-}
-// 共通ボタン
-.c-btn {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 220px;
-  margin: 0 auto;
-  padding: 16px;
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #fff;
-  background-color: #5d4f3a;
-  border-radius: 32px;
-  z-index: 1;
-  letter-spacing: 0.1em;
-  line-height: 1;
-}
-.c-btn--circle {
-  position: absolute;
-  right: 12px;
-  width: 36px;
-  height: 36px;
-  text-align: center;
-  border-radius: 50%;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .c-btn--circle-arrow {
-    position: relative;
-    display: inline-block;
-    width: 12px;
-  }
-  .c-btn--circle-arrow img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-}
-.c-btn:hover .c-btn--circle-arrow img {
-  animation: 0.4s ease 0s 1 normal none running lefttoright;
-}
-@keyframes lefttoright {
-  0% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  49% {
-    transform: translateX(110%);
-    opacity: 0;
-  }
-  50% {
-    transform: translateX(-110%);
-    opacity: 0;
-  }
-  51% {
-    transform: translateX(-110%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
 
 //================================================
@@ -858,7 +860,6 @@ body {
 	padding: 0;
   border-radius: 16px;
 	z-index: 0;
-
 	@include max-screen($breakpoint-sm) {
 		height: 200px;
 	}
@@ -873,9 +874,8 @@ body {
 		transform: translateY(-50%);
 		text-align: left;
     color: #fff;
-
 		@include max-screen($breakpoint-sm) {
-			left: 0;
+			left: 4%
 		}
 	
 		p {
@@ -888,7 +888,6 @@ body {
 			letter-spacing: 0.01em;
 			background-color: $green-color;
       border-radius: 8px;
-
 			@include max-screen($breakpoint-sm) {
 				margin-bottom: 8px;
 				padding: 10px;
@@ -903,14 +902,12 @@ body {
 			letter-spacing: 0.05em;
 			background-color: $green-color;
       border-radius: 8px;
-    
-			
 			@include max-screen($breakpoint-sm) {
 				padding: 10px;
 				font-size: 1.6rem;
 			}
 		}
-  	}
+  }
 }
 
 .c-parts-sec {
@@ -918,7 +915,6 @@ body {
   padding: 80px 0;
 	font-weight: 500;
 	text-align: center;
-
   @include max-screen($breakpoint-sm) {
     padding: 60px 0;
   }
@@ -933,7 +929,6 @@ body {
     letter-spacing: 0.05em;
     line-height: 1.8;
     color: $green-color;
-
     @include max-screen($breakpoint-sm) {
       font-size: 2rem;
     }
@@ -943,7 +938,6 @@ body {
 		font-size: 1.6rem;
     line-height: 2;
     font-weight: 700;
-
 		@include max-screen($breakpoint-s) {
 			text-align: left;
 			background: unset;
@@ -951,34 +945,11 @@ body {
 	}
 }
 
-
 .c-parts-check {
-  margin-top: 120px;
-
+  padding: 80px 0;
+  text-align: center;
   @include max-screen($breakpoint-sm) {
-    margin-top: 100px;
-  }
-
-  .c-parts-check__title {
-    margin-bottom: 80px;
-    font-size: clamp(1.8rem, 2.2vw, 2.6rem);
-    font-weight: 700;
-    color: $base-text;
-    font-family: $font-Noto-jp;
-    text-align: center;
-
-    @include max-screen($breakpoint-sm) {
-      margin-bottom: 60px;
-    }
-
-    span {
-      display: block;
-      margin-bottom: 24px;
-      font-size: 2rem;
-      font-weight: 700;
-      font-family: $font-Roboto;
-      letter-spacing: 0.1em;
-    }
+    padding: 60px 0;
   }
 
   .c-parts-check__list {
@@ -987,25 +958,29 @@ body {
     gap: 20px;
     max-width: 840px;
     margin-inline: auto;
+    margin-bottom: 40px;
     font-weight: 500;
     line-height: 1.7;
     text-align: left;
-
-    @include max-screen($breakpoint-s) {
-      flex-direction: column;
-    }
 
     li {
       display: flex;
       flex: 0 0 48%;
       align-items: center;
-      padding-left: 20px;
-      background: #fff;
       padding: 20px 30px;
+      background-color: #fff;
+      border-radius: 50px;
+
+      @include max-screen($breakpoint-sm) {
+        flex: 100%;
+      }
 
       p {
         position: relative;
         padding-left: 30px;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: $base-text;
       }
       p::before {
         content: "";
@@ -1015,8 +990,8 @@ body {
         transform: translateY(-50%) rotate(-45deg) translateX(0);
         width: 15px;
         height: 10px;
-        border-bottom: 3px solid #FFF;
-        border-left: 3px solid #FFF;
+        border-bottom: 3px solid #fff;
+        border-left: 3px solid #fff;
         z-index: 1;
       }
       p::after {
@@ -1026,15 +1001,19 @@ body {
         height: 30px;
         left: -10px;
         top: 50%;
+        background-color: $green-color;
         border-radius: 24px;
         transform: translateY(-50%);
       }
-    }
+    }    
   }
 }
 
-
 .c-2col {
+  padding: 80px 0;
+  @include max-screen($breakpoint-sm) {
+    padding: 60px 0;
+  }
 
   .c-2col__list {
     display: flex;
@@ -1044,7 +1023,6 @@ body {
       display: grid;
       background-color: #fff;
       border-radius: 16px;
-
       @include max-screen($breakpoint-md) {
         grid-template-columns: 1fr;
       }
@@ -1078,6 +1056,9 @@ body {
         .c-2col__item--title {
           color: $primary-color;
           font-size: 3rem;
+          @include max-screen($breakpoint-md) {
+            font-size: 2rem;
+          }
         }
 
         .c-2col__item--tag {
@@ -1109,6 +1090,9 @@ body {
       gap: 66px;
       padding: 40px 36px 40px 24px;
       border: 1px solid #DADADA;
+      @include max-screen($breakpoint-lg) {
+        grid-template-columns: minmax(0, 560px) 1fr;
+      }
       @include max-screen($breakpoint-md) {
         grid-template-columns: 1fr;
         padding: 5%;
@@ -1120,7 +1104,6 @@ body {
 
       .c-2col__item--img {
         aspect-ratio: 640 / 455;
-
         @include max-screen($breakpoint-sm) {
           max-width: 620px;
           margin-inline: auto;
@@ -1133,7 +1116,6 @@ body {
           border-radius: 16px;
           overflow: hidden;
           height: 100%;
-
           @include max-screen($breakpoint-sm) {
             border-radius: 8px;
           }
@@ -1240,7 +1222,7 @@ body {
       }
 
       .c-2col__item--img {
-        aspect-ratio: 1 / 1;
+        aspect-ratio: 5 / 4;
         overflow: hidden;
         border-radius: 16px;
 
@@ -1277,10 +1259,111 @@ body {
   }
 }
 
+.c-2col_reverse {
+
+  .c-2col__list {
+    gap: 24px;
+
+    .c-2col__item {
+      display: flex;
+      flex-direction: row;
+      gap: 56px;
+      padding: 40px 36px 40px 24px;
+      @include max-screen($breakpoint-md) {
+        flex-direction: column;
+        padding: 5%;
+      }
+      @include max-screen($breakpoint-s) {
+        gap: 34px;
+        padding: 24px 16px;
+      }
+
+      .c-2col__item--img {
+        aspect-ratio: 640 / 455;
+        @include max-screen($breakpoint-sm) {
+          max-width: 620px;
+          margin-inline: auto;
+        }
+        @include max-screen($breakpoint-s) {
+          aspect-ratio: auto;
+        }
+
+        img {
+          border-radius: 16px;
+          overflow: hidden;
+          height: 100%;
+          @include max-screen($breakpoint-sm) {
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+    .c-2col__item:nth-of-type(even) {
+      flex-direction: row-reverse;
+      @include max-screen($breakpoint-md) {
+        flex-direction: column;
+      }
+    }
+
+      .c-2col__item--body {
+        gap: 32px;
+        margin-top: 36px;
+        @include max-screen($breakpoint-sm) {
+          gap: 16px;
+          margin-top: 0;
+        }
+
+        .c-2col__item--label {
+          @include max-screen($breakpoint-sm) {
+            font-size: 2rem;
+          }
+        }
+
+        .c-2col__item--title {
+          @include max-screen($breakpoint-sm) {
+            font-size: 2rem;
+            line-height: 1.6;
+          }
+        }
+        .c-2col__item--tag {
+          @include max-screen($breakpoint-sm) {
+            margin-bottom: 24px;
+          }
+        }
+        .c-2col__item--text {
+          @include max-screen($breakpoint-sm) {
+            font-size: 1.4rem;
+            line-height: 1.78;
+          }
+        }
+      }
+    }
+
+    .c-2col__item:nth-child(1) .c-2col__item--illust {
+      max-width: 265px;
+      @include max-screen($breakpoint-sm) {
+        max-width: 180px;
+      }
+    }
+    .c-2col__item:nth-child(2) .c-2col__item--illust {
+      max-width: 215px;
+      @include max-screen($breakpoint-sm) {
+        max-width: 180px;
+      }
+    }
+    .c-2col__item:nth-child(3) .c-2col__item--illust {
+      max-width: 255px;
+      @include max-screen($breakpoint-sm) {
+        max-width: 180px;
+      }
+    }
+  }
 
 .c-3col {
-  padding: 60px 0;
-  background-color: #F1EBDF;
+  padding: 80px 0;
+  @include max-screen($breakpoint-sm) {
+    padding: 60px 0;
+  }
 
   .l-container {
     max-width: 1080px;
@@ -1294,7 +1377,6 @@ body {
   .c-3col__head {
     text-align: center;
     margin-bottom: 80px;
-
     @include max-screen($breakpoint-sm) {
       margin-bottom: 60px;
     }
@@ -1304,11 +1386,9 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-
     @include max-screen($breakpoint-md) {
       grid-template-columns: repeat(2, 1fr);
     }
-
     @include max-screen($breakpoint-s) {
       grid-template-columns: 1fr;
     }
@@ -1369,19 +1449,16 @@ body {
   }
 }
 
-
 .c-flow-slim {
-  margin-top: 120px;
+  padding: 80px 0;
   text-align: center;
-
   @include max-screen($breakpoint-sm) {
-    margin-top: 80px;
+    padding: 60px 0;
   }
 
   .c-flow-slim__head {
     margin-bottom: 80px;
     text-align: center;
-
     @include max-screen($breakpoint-sm) {
       margin-bottom: 60px;
     }
@@ -1395,113 +1472,315 @@ body {
     margin-inline: auto;
     margin-bottom: 60px;
 
-  .c-flow-slim__item {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    padding: 20px 40px;
-    background: #FFF;
-    border-radius: 16px;
-
-    @include max-screen($breakpoint-sm) {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 20px;
-    }
-
-    .c-flow-slim__step {
+    .c-flow-slim__item {
+      position: relative;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      flex: 0 0 80px;
-      width: 80px;
-      height: 80px;
-      font-size: 1.2rem;
-      line-height: 1;
-      color: #FFF;
-      border-radius: 50%;
-      background: #00523f;
-
+      align-items: center;
+      gap: 30px;
+      padding: 20px 40px;
+      background: #FFF;
+      border-radius: 16px;
       @include max-screen($breakpoint-sm) {
-        margin-inline: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
       }
 
-      span {
-        margin-top: 4px;
-        font-size: 3.2rem;
-      }
-    }
-
-    .c-flow-slim__content {
-      text-align: left;
-
-      .c-flow-slim__heading {
-        margin-bottom: 14px;
-        font-size: 2rem;
-        font-weight: 500;
-        line-height: 1.3;
-        letter-spacing: 0.05em;
-        color: #00523f;
-
+      .c-flow-slim__step {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 0 0 80px;
+        width: 80px;
+        height: 80px;
+        font-size: 1.2rem;
+        line-height: 1;
+        color: #FFF;
+        border-radius: 50%;
+        background-color: $green-color;
         @include max-screen($breakpoint-sm) {
-          text-align: center;
+          margin-inline: auto;
+        }
+
+        span {
+          margin-top: 4px;
+          font-size: 3.2rem;
         }
       }
 
-      .c-flow-slim__desc {
-        line-height: 1.73;
+      .c-flow-slim__content {
+        text-align: left;
+
+        .c-flow-slim__heading {
+          margin-bottom: 14px;
+          font-size: 2rem;
+          font-weight: 500;
+          line-height: 1.3;
+          letter-spacing: 0.05em;
+          color: $green-color;
+          @include max-screen($breakpoint-sm) {
+            text-align: center;
+          }
+        }
+
+        .c-flow-slim__desc {
+          line-height: 1.73;
+        }
       }
     }
+    .c-flow-slim__item:nth-of-type(even) {
+      .c-flow-slim__step {
+        background-color: $orange-color;
+      }
+      .c-flow-slim__content {
+        .c-flow-slim__heading {
+          color: $orange-color;
+        }
+      }
+    }
+    .c-flow-slim__item:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -23px;
+      transform: translateX(-50%);
+      width: 46px;
+      height: 24px;
+      background-color: #FFF;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+    }
   }
-  .c-flow-slim__item:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -23px;
-    transform: translateX(-50%);
-    width: 46px;
-    height: 24px;
-    background-color: #FFF;
-    clip-path: polygon(0 0, 100% 0, 50% 100%);
-  }
+  .c-3col__list .c-3col__item .c-3col__item--body .c-3col__item--title {
+    margin-top: 0;
   }
 }
 
-  .c-service__button {
+.c-service__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: $green-color;
+  transform: rotate(90deg);
+  @include max-screen($breakpoint-sm) {
+    width: 32px;
+    height: 32px;
+  }
+}
+.c-service__button:hover {
+  border: 1px solid $green-color;
+  background-color: #fff;
+}
+.c-service__button:hover path {
+  fill: $green-color;
+}
+
+/* =================================================================
+  c-faq / よくあるご質問共通パーツ
+================================================================= */
+.c-faq {
+  padding: 80px 0;
+  @include max-screen($breakpoint-sm) {
+    padding: 60px 0;
+  }
+  
+  .c-faq__btn {
+    margin-top: 60px;
+  }
+  .c-faq__inner {
+    margin-top: 60px;
+    padding: 0 40px;
+  }
+
+  .c-faq__list {
+    margin: 0;
+  }
+
+  .c-faq__item {
+    margin-bottom: 24px;
+    background-color: #fff;
+    border-radius: 16px;
+    border: 1px solid #DADADA;
+  }
+
+  .c-faq__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 32px;
+    cursor: pointer;
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-align: left;
+    color: $green-color;
+  }
+
+  /* "Q" の文字 */
+  .c-faq__question::before {
+    content: "Q";
     display: flex;
     justify-content: center;
+    width: 40px;
+    height: auto;
+    margin-right: 24px;
+    font-family: $font-Work-sans;
+    font-size: 4rem;
+    font-weight: 700;
+    color: $green-color;
+  }
+  
+  .c-faq__question .c-faq__question--title {
+    flex: 1;
+  }
+
+  .c-faq__question--arrows {
+    position: relative;
+    display: flex;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 50%;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
     background-color: $green-color;
-    transform: rotate(90deg);
-    @include max-screen($breakpoint-sm) {
-      width: 32px;
-      height: 32px;
+    border-radius: 50%;
+
+    .c-faq__question-right {
+      display: inline-block;
+      vertical-align: middle;
+      color: #FFF;
+      line-height: 1;
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      width: 0.6em;
+      height: 0.6em;
+      transition: transform 0.5s ease;
+      transform: translate(-50%, -50%) rotate(135deg);
+    }
+    .c-faq__question-right::before,
+    .c-faq__question-right::after{
+      content: '';
+      position: absolute;
+      background: currentColor;
+      border-radius: 0.1em;
+    }
+    .c-faq__question-right::before {
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 0.1em;
+    }
+    .c-faq__question-right::after {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 0.1em;
     }
   }
-  .c-service__button:hover {
-    border: 1px solid $green-color;
-    background-color: #fff;
+
+  /* 開いている時の矢印 */
+  .c-faq__item.is-open .c-faq__question-right {
+    top: 55%;
+    transform: translate(-50%, -50%) rotate(-45deg);
   }
-  .c-service__button:hover path {
-    fill: $green-color;
+
+  .c-faq__answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
   }
 
+  .c-faq__item.is-open .c-faq__answer {
+    max-height: max-content;
+  }
+
+  .c-faq__answer p {
+    display: flex;
+    align-items: start;
+    margin: 0;
+    padding: 40px 32px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.8;
+  }
+
+  /* "A" の文字 */
+  .c-faq__answer p::before {
+    content: "A";
+    display: flex;
+    flex: 0 0 40px;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 24px;
+    font-family: $font-Work-sans;
+    font-size: 4rem;
+    font-weight: 700;
+    color: $orange-color;
+  }
+
+  //================================================
+  // レスポンシブ
+  //================================================
+  @include max-screen($breakpoint-sm) {
+    .c-faq__inner {
+      padding: 0;
+    }
+    .c-faq__question {
+      font-size: 1.5rem;
+      padding: 10px;
+    }
+    .c-faq__question::before,
+    .c-faq__answer p::before {
+      font-size: 2rem;
+      margin-right: 0;
+    }
+    .c-faq__answer p {
+      font-size: 1.5rem;
+      padding: 10px;
+    }
+    .c-faq__question--arrows {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  @include max-screen($breakpoint-xs) {
+    .c-faq__question {
+      font-size: 1.4rem;
+    }
+    .c-faq__item {
+      padding: 10px 0;
+    }
+    .c-faq__item.is-open .c-faq__answer {
+      padding-top: 32px;
+    }
+    .c-faq__answer p {
+      font-size: 1.4rem;
+    }
+  }
+}
 
 
+/* =================================================================
+  page-about / たかやしろ住研について
+================================================================= */
 .page-about {
-
   .l-main{
     padding: 0;
   }
 
   .c-pagehead-set {
 		background-image: url(../img/about-mv-bg.jpg);
-
 		@include max-screen($breakpoint-lg) {
 			border-left: 0;
 		}
@@ -1843,158 +2122,99 @@ body {
   }
 }
 
-
 /* =================================================================
-  c-faq  /  よくあるご質問
+  page-exterior / 外壁・屋根塗装
 ================================================================= */
-.c-faq {
-  padding: 60px 0;
-  
-  .c-faq__btn {
-    margin-top: 60px;
-  }
-  .c-faq__inner {
-    margin-top: 60px;
-    padding: 0 40px;
+.page-exterior {
+  .l-main{
+    padding: 0;
   }
 
-  .c-faq__list {
-    margin: 0;
-  }
+  .c-pagehead-set {
+		background-image: url(../img/exterior-mv-bg.jpg);
+		@include max-screen($breakpoint-lg) {
+			border-left: 0;
+		}
+	}
 
-  .c-faq__item {
-    margin-bottom: 24px;
-    background-color: #fff;
-    border-radius: 16px;
-    border: 1px solid #DADADA;
-  }
-
-  .c-faq__question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .l-wrapper {
     width: 100%;
-    padding: 40px 32px;
-    cursor: pointer;
-    font-size: 2.4rem;
-    font-weight: 500;
-    text-align: left;
-    color: $green-color;
+    max-width: 100%;
   }
 
-  /* "Q" の文字 */
-  .c-faq__question::before {
-    content: "Q";
-    display: flex;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    margin-right: 24px;
-    font-family: $font-Work-sans;
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: #fff;
-    background-color: $green-color;
-    border-radius: 50%;
-  }
-  
-  .c-faq__question span {
-    flex: 1;
+  .c-parts-check {
+    background-color: #F1EBDF;
   }
 
-  /* 矢印アイコン */
-  .c-faq__question::after {
-    content: "";
-    display: block;
-    width: 12px;
-    height: 12px;
-    border-right: 2px solid $green-color;
-    border-bottom: 2px solid $green-color;
-    transform: rotate(45deg);
-    transition: transform 0.3s ease;
-    margin-left: 24px;
-    flex-shrink: 0;
+  .exterior-ifCase {
+    background-color: #F1EBDF;
   }
-
-  /* 開いている時の矢印 */
-  .c-faq__item.is-open .c-faq__question::after {
-    transform: rotate(-135deg);
-  }
-
-  .c-faq__answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out, padding 0.2s ease-out;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin: 0;
-  }
-
-  .c-faq__item.is-open .c-faq__answer {
-    max-height: 300px;
-  }
-
-  .c-faq__answer p {
-    display: flex;
-    align-items: center;
-    padding: 40px 32px;
-    font-size: 1.6rem;
-    font-weight: 500;
-    margin: 0;
-  }
-
-  /* "A" の文字 */
-  .c-faq__answer p::before {
-    content: "A";
-    display: flex;
-    flex: 0 0 40px;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    margin-right: 24px;
-    font-family: $font-Work-sans;
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: #fff;
-    background-color: $orange-color;
-    border-radius: 50%;
-  }
-
-  //================================================
-  // レスポンシブ
-  //================================================
-  @include max-screen($breakpoint-sm) {
-    .c-faq__inner {
-      padding: 0;
+  .exterior-work {
+    .exterior-work__head {
+      .c-title{
+        margin-bottom: 40px;
+      }
     }
-    .c-faq__question {
-      font-size: 1.5rem;
-    }
-    .c-faq__question::before,
-    .c-faq__answer p::before {
-      font-size: 2rem;
-      margin-right: 16px;
-    }
-    .c-faq__answer p {
-      font-size: 1.5rem;
+    
+    .c-2col__list {
+
+      .c-2col__item {
+        grid-template-columns: minmax(0, 300px) 1fr;
+        padding: 40px 24px;
+        align-items: center;
+        gap: 56px;
+        border-bottom: 3px solid #fff;
+        border-radius: unset;
+        background: unset;
+        @include max-screen($breakpoint-md) {
+          grid-template-columns: 1fr;
+        }
+    
+        .c-2col__item--img {
+          aspect-ratio: 1 / 1;
+          @include max-screen($breakpoint-md) {
+            max-width: 400px;
+            margin-inline: auto;
+          }
+
+          img {
+            border-radius: 50%;
+            overflow: hidden;
+            height: 100%;
+          }
+        }
+        .c-2col__item--body {
+          gap: 32px;
+        }
+        .c-2col__item--img::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          right: -10px;
+          bottom: -10px;
+          background-image: url(../img/pattern-plus.png);
+          background-size: 5px 5px;
+          background-repeat: repeat;
+          border-radius: 50%;
+          z-index: 1;
+        }
+      }
+      .c-2col__item:last-child {
+        border-bottom: unset;
+      }
     }
   }
-
-  @include max-screen($breakpoint-xs) {
-    .c-faq__question {
-      font-size: 1.4rem;
+  .exterior-flow  {
+    background-color: #F1EBDF;
+  }
+  .exterior-cases {
+    padding: 80px 0;
+    @include max-screen($breakpoint-sm) {
+      padding: 60px 0;
     }
-    .c-faq__item {
-      padding: 32px 0px;
-    }
-    .c-faq__item.is-open .c-faq__answer {
-      padding-top: 32px;
-    }
-    .c-faq__answer p {
-      font-size: 1.4rem;
-    }
+  }
+  .exterior-faq {
+    background-color: #FFF;
   }
 }
