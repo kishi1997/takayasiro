@@ -1560,6 +1560,7 @@ body {
 ================================================================= */
 .c-faq {
   padding: 80px 0;
+  background-color: #FFF;
   /* "Q" の文字 */
   /* 開いている時の矢印 */
   /* "A" の文字 */
@@ -2188,6 +2189,133 @@ body {
     padding: 60px 0;
   }
 }
-.page-exterior .exterior-faq {
-  background-color: #FFF;
+
+/* =================================================================
+  page-roofing / 外壁・屋根塗装
+================================================================= */
+.page-roofing .l-main {
+  padding: 0;
+}
+.page-roofing .c-pagehead-set {
+  background-image: url(../img/roofing-mv-bg.jpg);
+}
+@media screen and (max-width: 1280px) {
+  .page-roofing .c-pagehead-set {
+    border-left: 0;
+  }
+}
+.page-roofing .l-wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+.page-roofing .c-parts-check {
+  background-color: #F1EBDF;
+}
+.page-roofing .roofing-ifCase {
+  background-color: #F1EBDF;
+}
+.page-roofing .roofing-method {
+  position: relative;
+  padding: 80px 0;
+}
+@media screen and (max-width: 768px) {
+  .page-roofing .roofing-method {
+    padding: 60px 0;
+  }
+}
+.page-roofing .roofing-method .roofing-method__list {
+  display: flex;
+  flex-direction: column;
+  gap: 140px;
+}
+@media screen and (max-width: 768px) {
+  .page-roofing .roofing-method .roofing-method__list {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+.page-roofing .roofing-method .roofing-method__list .roofing-method__item {
+  position: relative;
+  display: flex;
+  gap: 70px;
+}
+@media screen and (max-width: 1080px) {
+  .page-roofing .roofing-method .roofing-method__list .roofing-method__item {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-roofing .roofing-method .roofing-method__list .roofing-method__item {
+    flex-direction: column;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-inline: auto;
+  }
+}
+.page-roofing .roofing-method .roofing-method__list .roofing-method__item .roofing-method__img {
+  position: relative;
+  flex: 0 0 50%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.page-roofing .roofing-method .roofing-method__list .roofing-method__item .roofing-method__img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.page-roofing .roofing-method .roofing-method__list .roofing-method__item .roofing-method__content {
+  position: relative;
+  font-weight: 500;
+  flex: 1;
+}
+.page-roofing .roofing-method .roofing-method__list .roofing-method__item .roofing-method__content .roofing-method__content--title {
+  margin-bottom: clamp(3.2rem, 4.4vw, 5.4rem);
+  font-size: clamp(2rem, 2.2vw, 2.6rem);
+  color: #00523f;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+.page-roofing .roofing-method .roofing-method__list .roofing-method__item .roofing-method__content .roofing-method__content--text {
+  font-size: clamp(1.4rem, 1.5vw, 1.6rem);
+  line-height: 2;
+}
+.page-roofing .roofing-method .roofing-method__list .roofing-method__item .roofing-method__content .bg-number {
+  position: absolute;
+  font-size: clamp(67px, 17.857vw, 250px);
+  font-family: "Work Sans", sans-serif;
+  color: rgba(0, 82, 63, 0.1);
+  z-index: -1;
+}
+@media (max-width: 1080px) {
+  .page-roofing .roofing-method .roofing-method__list .roofing-method__item .roofing-method__content .bg-number {
+    top: 30px;
+  }
+}
+.page-roofing .roofing-method .roofing-method__list .roofing-method__item:nth-child(odd) .bg-number {
+  right: 0;
+  transform: translateY(-50%) translateX(0);
+}
+.page-roofing .roofing-method .roofing-method__list .roofing-method__item:nth-child(even) {
+  direction: rtl;
+}
+.page-roofing .roofing-method .roofing-method__list .roofing-method__item:nth-child(even) > * {
+  direction: ltr;
+}
+.page-roofing .roofing-method .roofing-method__list .roofing-method__item:nth-child(even) .bg-number {
+  left: 0;
+  transform: translateY(-45%) translateX(0%);
+}
+@media screen and (max-width: 1080px) {
+  .page-roofing .roofing-method .roofing-method__list .roofing-method__item:nth-child(even) .bg-number {
+    left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-roofing .roofing-method .roofing-method__list .roofing-method__item:nth-child(even) .bg-number {
+    left: unset;
+    right: 0;
+  }
+}
+.page-roofing .roofing-flow {
+  background-color: #F1EBDF;
 }/*# sourceMappingURL=design.css.map */

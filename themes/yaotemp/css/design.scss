@@ -1583,6 +1583,7 @@ body {
 ================================================================= */
 .c-faq {
   padding: 80px 0;
+  background-color: #FFF;
   @include max-screen($breakpoint-sm) {
     padding: 60px 0;
   }
@@ -2214,7 +2215,138 @@ body {
       padding: 60px 0;
     }
   }
-  .exterior-faq {
-    background-color: #FFF;
+}
+
+/* =================================================================
+  page-roofing / 外壁・屋根塗装
+================================================================= */
+.page-roofing {
+  .l-main{
+    padding: 0;
+  }
+
+  .c-pagehead-set {
+		background-image: url(../img/roofing-mv-bg.jpg);
+		@include max-screen($breakpoint-lg) {
+			border-left: 0;
+		}
+	}
+
+  .l-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .c-parts-check {
+    background-color: #F1EBDF;
+  }
+
+  .roofing-ifCase {
+    background-color: #F1EBDF;
+  }
+
+  .roofing-method {
+    position: relative;
+    padding: 80px 0;
+    @include max-screen($breakpoint-sm) {
+      padding: 60px 0;
+    }
+  
+    .roofing-method__list {
+      display: flex;
+      flex-direction: column;
+      gap: 140px;
+      @include max-screen($breakpoint-sm) {
+        flex-direction: column;
+        gap: 40px;
+      }
+    
+      .roofing-method__item {
+        position: relative;
+        display: flex;
+        gap: 70px;
+        @include max-screen($breakpoint-md) {
+          gap: 40px;
+        }   
+        @include max-screen($breakpoint-sm) {
+          flex-direction: column;
+          width: fit-content;
+          margin-inline: auto;
+        }
+    
+        .roofing-method__img {
+          position: relative;
+          flex: 0 0 50%;
+          border-radius: 16px;
+          overflow: hidden;
+
+          img {
+            display: block;
+            width: 100%;
+            height: auto;
+          }
+        }
+    
+        .roofing-method__content {
+          position: relative;
+          font-weight: 500;
+          flex: 1;
+
+          .roofing-method__content--title {
+            margin-bottom: clamp(3.2rem, 4.4vw, 5.4rem);
+            font-size: clamp(2rem, 2.2vw, 2.6rem);
+            color: $primary-color;
+            line-height: 1.5;
+            letter-spacing: 0.05em;
+          }
+
+          .roofing-method__content--text {
+            font-size: clamp(1.4rem, 1.5vw, 1.6rem);
+            line-height: 2;
+          }
+    
+          .bg-number {
+            position: absolute;
+            font-size: clamp(67px, 17.857vw, 250px);
+            font-family: $font-Work-sans;
+            color: rgba(0, 82, 63, 0.1);
+            z-index: -1;
+            @media (max-width: $breakpoint-md) {
+              top: 30px;
+            }
+          }
+        }
+      }
+      .roofing-method__item:nth-child(odd) {
+        .bg-number {
+          right: 0;
+          transform: translateY(-50%) translateX(0);
+        }
+      }
+      .roofing-method__item:nth-child(even) {
+        direction: rtl;
+
+        > * {
+          direction: ltr;
+        }
+    
+        .bg-number {
+          left: 0;
+          transform: translateY(-45%) translateX(0%);
+
+          @include max-screen($breakpoint-md) {
+            left: 0;
+          }
+          @include max-screen($breakpoint-sm) {
+            left: unset;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .roofing-flow  {
+    background-color: #F1EBDF;
   }
 }

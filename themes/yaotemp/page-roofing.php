@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="page-exterior">
+<div class="page-roofing">
     <div class="c-pagehead-set">
         <div class="c-pagehead-text">
             <h1><?php the_title(); ?></h1>
@@ -31,7 +31,7 @@
             <div class="l-container">            
                 <div class="c-parts-sec__item">
                     <h2 class="c-parts-sec__title">
-                        外壁・屋根塗装とは？
+                        屋根・外壁工事とは？
                     </h2>
                     <p class="c-parts-sec__lead">
                         テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。<br>
@@ -41,18 +41,19 @@
             </div>
         </section>
 
-        <section class="c-parts-check">
+        <section class="roofing-worries c-parts-check">
             <div class="l-container">
-                <div class="exterior-worries__head">
+                <div class="roofing-worries__head">
                     <div class="c-title">
                         <h2 class="c-title--jp">こんなお悩みありませんか？</h2>
                         <span class="c-title--en">DO YOU HAVE THESE CONCERNS?</span>
                     </div>
                 </div>
                 <ul class="c-parts-check__list">
-                    <li><p>外壁にひび割れ（クラック）がある</p></li>
-                    <li><p>壁を触ると手に白い粉がつく</p></li>
-                    <li><p>屋根の色が褪せている、コケが生えている</p></li>
+                    <li><p>すでに雨漏りが発生している</p></li>
+                    <li><p>屋根材が割れたり、大きく剥がれたりしている</p></li>
+                    <li><p>業者に「これは塗装では無理だ」と断られた</p></li>
+                    <li><p>築20年以上が経過し、下地から不安だ</p></li>
                 </ul>
                 <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。<br>
                 テキストテキストテキストテキストテキストテキストテキストテキスト。<br>
@@ -60,11 +61,11 @@
             </div>
         </section>
 
-        <section class="exterior-point c-2col c-2col_media">
-            <div class="exterior-point__head">
+        <section class="roofing-point c-2col c-2col_media">
+            <div class="roofing-point__head">
                 <div class="c-title">
-                    <h2 class="c-title--jp">なぜ塗装が必要なのでしょうか？</h2>
-                    <span class="c-title--en">WHY PAINTING IS ESSENTIAL</span>
+                    <h2 class="c-title--jp">なぜ「塗装」ではなく「工事」が必要か</h2>
+                    <span class="c-title--en">WHY PAINTING IS NOT ENOUGH</span>
                 </div>
             </div>
 
@@ -72,14 +73,14 @@
                 <div class="c-2col__list">
                     <article class="c-2col__item">
                         <figure class="c-2col__item--img">
-                            <img src="<?php bloginfo('template_url');?>/img/exterior-point-img1.jpg" alt="外壁サイディングの素材感と継ぎ目のディテール">
+                            <img src="<?php bloginfo('template_url');?>/img/roofing-point-img1.jpg" alt="施工されたスレート屋根の表面">
                         </figure>
                         <div class="c-2col__item--body">
                             <p class="c-2col__item--label">POINT1</p>
-                            <h3 class="c-2col__item--title">防水性の回復</h3>
-                            <span class="c-2col__item--tag">テキストテキスト</span>
+                            <h3 class="c-2col__item--title">雨漏りの根本解決</h3>
+                            <span class="c-2col__item--tag">テキストテキストテキストテキスト</span>
                             <p class="c-2col__item--text">
-                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                             </p>
                             <div class="c-2col__item--illust u-pc">
                                 <img src="<?php bloginfo('template_url');?>/img/about-reason-illust-img1.png" alt="">
@@ -89,16 +90,16 @@
 
                     <article class="c-2col__item">
                         <figure class="c-2col__item--img">
-                            <img src="<?php bloginfo('template_url');?>/img/exterior-point-img2.jpg" alt="スレート屋根の施工と仕上がりイメージ">
+                            <img src="<?php bloginfo('template_url');?>/img/roofing-point-img2.jpg" alt="和風住宅の瓦屋根">
                         </figure>
                         <div class="c-2col__item--body">
                             <p class="c-2col__item--label">POINT2</p>
                             <h3 class="c-2col__item--title">
-                                美観の向上
+                                住まいの長寿命化
                             </h3>
-                            <span class="c-2col__item--tag">テキストテキスト</span>
+                            <span class="c-2col__item--tag">テキストテキストテキストテキスト</span>
                             <p class="c-2col__item--text">
-                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                             </p>
                             <div class="c-2col__item--illust u-pc">
                                 <img src="<?php bloginfo('template_url');?>/img/about-reason-illust-img2.png" alt="">
@@ -108,16 +109,16 @@
 
                     <article class="c-2col__item">
                         <figure class="c-2col__item--img">
-                            <img src="<?php bloginfo('template_url');?>/img/exterior-point-img3.jpg" alt="外装リフォーム後の住宅外観と仕上がりイメージ">
+                            <img src="<?php bloginfo('template_url');?>/img/roofing-point-img3.jpg" alt="白い外壁のモダンな住宅外観">
                         </figure>
                         <div class="c-2col__item--body">
                             <p class="c-2col__item--label">POINT3</p>
                             <h3 class="c-2col__item--title">
-                                遮熱・断熱効果
+                                耐震性の向上
                             </h3>
-                            <span class="c-2col__item--tag">テキストテキスト</span>
+                            <span class="c-2col__item--tag">テキストテキストテキストテキスト</span>
                             <p class="c-2col__item--text">
-                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                             </p>
                             <div class="c-2col__item--illust u-pc">
                                 <img src="<?php bloginfo('template_url');?>/img/about-reason-illust-img3.png" alt="">
@@ -128,8 +129,8 @@
             </div>
         </section>
 
-        <section class="exterior-ifCase c-2col c-2col_reverse">
-            <div class="exterior-ifCase__head">
+        <section class="roofing-ifCase c-2col c-2col_reverse">
+            <div class="roofing-ifCase__head">
                 <div class="c-title">
                     <h2 class="c-title--jp">もし放置すると？</h2>
                     <span class="c-title--en">IF LEFT UNATTENDED</span>
@@ -140,12 +141,13 @@
                 <div class="c-2col__list">
                     <article class="c-2col__item">
                         <figure class="c-2col__item--img">
-                            <img src="<?php bloginfo('template_url');?>/img/exterior-ifCase-img1.jpg" alt="ひび割れた壁の様子">
+                            <img src="<?php bloginfo('template_url');?>/img/roofing-ifCase-img1.jpg" alt="天井にできた雨漏りのシミ">
                         </figure>
                         <div class="c-2col__item--body">
                             <h3 class="c-2col__item--title">
-                                劣化した塗膜の隙間から雨水が侵入し、<br class="u-pc">
-                                壁の内側や柱（構造体）を腐食
+                                わずかな雨漏りでも、<br class="u-pc">
+                                内部の柱や断熱材を湿らせ、<br class="u-pc">
+                                腐食やカビの原因
                             </h3>
                             <p class="c-2col__item--text">
                                 テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
@@ -154,12 +156,12 @@
                     </article>
                     <article class="c-2col__item">
                         <figure class="c-2col__item--img">
-                            <img src="<?php bloginfo('template_url');?>/img/exterior-ifCase-img2.jpg" alt="ひび割れた壁の様子">
+                            <img src="<?php bloginfo('template_url');?>/img/roofing-ifCase-img2.jpg" alt="小屋裏に見える雨漏りの水濡れ跡">
                         </figure>
                         <div class="c-2col__item--body">
                             <h3 class="c-2col__item--title">
-                                最終的には塗装では対応できなくなり、<br class="u-pc">
-                                高額な「張り替え工事」が必要になる可能性
+                                シロアリを呼び寄せる原因にもなり、<br class="u-pc">
+                                家の耐震性が著しく低下する危険
                             </h3>
                             <p class="c-2col__item--text">
                                 テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
@@ -170,60 +172,50 @@
             </div>
         </section>
 
-        <section class="exterior-work c-2col">
-            <div class="exterior-work__head">
+        <section class="roofing-method c-2col">
+            <div class="roofing-method__head">
                 <div class="c-title">
-                    <h2 class="c-title--jp">「長持ち」が違う、<br class="u-pc">たかやしろ住研の丁寧な仕事</h2>
-                    <span class="c-title--en">LASTING QUALITY FROM CAREFUL WORK</span>
+                    <h2 class="c-title--jp">選べる2つの工法</h2>
+                    <span class="c-title--en">TWO METHODS TO CHOOSE FROM</span>
                 </div>
             </div>
 
             <div class="l-container">
-                <div class="c-2col__list">
-                    <article class="c-2col__item">
-                        <figure class="c-2col__item--img">
-                            <img src="<?php bloginfo('template_url');?>/img/exterior-work-img1.jpg" alt="壁を高圧洗浄する様子">
-                        </figure>
-                        <div class="c-2col__item--body">
-                            <h3 class="c-2col__item--title">
-                                塗料の性能を最大化する「高圧洗浄と下地処理」
+                <div class="roofing-method__list">
+                    <div class="roofing-method__item">
+                        <div class="roofing-method__img">
+                            <img src="<?php bloginfo('template_url');?>/img/roofing-method-img1.jpg" alt="">
+                        </div>
+                        <div class="roofing-method__content">
+                            <span class="bg-number">01</span>
+                            <h3 class="roofing-method__content--title">
+                                カバー工法
                             </h3>
-                            <p class="c-2col__item--text">
-                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                            <p class="roofing-method__content--text">
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                             </p>
                         </div>
-                    </article>
-                    <article class="c-2col__item">
-                        <figure class="c-2col__item--img">
-                            <img src="<?php bloginfo('template_url');?>/img/exterior-work-img2.jpg" alt="壁の塗装をしている様子">
-                        </figure>
-                        <div class="c-2col__item--body">
-                            <h3 class="c-2col__item--title">
-                                耐久性を約束する「基本の3回塗り」
+                    </div>
+
+                    <div class="roofing-method__item">
+                        <div class="roofing-method__img">
+                            <img src="<?php bloginfo('template_url');?>/img/roofing-method-img2.jpg" alt="">
+                        </div>
+                        <div class="roofing-method__content">
+                            <span class="bg-number">02</span>
+                            <h3 class="roofing-method__content--title">
+                                葺き替え（張り替え）
                             </h3>
-                            <p class="c-2col__item--text">
-                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                            <p class="roofing-method__content--text">
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                             </p>
                         </div>
-                    </article>
-                    <article class="c-2col__item">
-                        <figure class="c-2col__item--img">
-                            <img src="<?php bloginfo('template_url');?>/img/exterior-work-img3.jpg" alt="黒い外壁の戸建ての外観">
-                        </figure>
-                        <div class="c-2col__item--body">
-                            <h3 class="c-2col__item--title">
-                                代表が直接管理する「安心の施工品質」
-                            </h3>
-                            <p class="c-2col__item--text">
-                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                            </p>
-                        </div>
-                    </article>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="exterior-flow c-flow-slim c-3col">
+        <section class="roofing-flow c-flow-slim c-3col">
             <div class="l-container">
                 <div class="c-flow-slim__head">
                     <div class="c-title">
@@ -267,12 +259,12 @@
                         <div class="c-3col__item">
                             <a href="<?php bloginfo('url'); ?>/works/exterior/">
                                 <div class="c-3col__item--img">
-                                    <img src="<?php bloginfo('template_url');?>/img/c-flow-slim-img1.jpg" alt="ご夫婦とスタッフが相談している写真">
+                                    <img src="<?php bloginfo('template_url');?>/img/c-flow-slim-img1.jpg" alt="外壁・屋根塗装のイメージ画像">
                                 </div>
                                 <div class="c-3col__item--body">
-                                    <h3 class="c-3col__item--title">見出し見出し見出し見出し</h3>
+                                    <h3 class="c-3col__item--title">施工事例テスト施工事例テスト</h3>
                                     <p class="c-3col__item--text">
-                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                        施工事例のテキストが入ります。施工事例のテキストが入ります。施工事例のテキストが…
                                     </p>
                                 </div>                                
                             </a>
@@ -280,12 +272,12 @@
                         <div class="c-3col__item">
                             <a href="<?php bloginfo('url'); ?>/works/exterior/">
                                 <div class="c-3col__item--img">
-                                    <img src="<?php bloginfo('template_url');?>/img/c-flow-slim-img2.jpg" alt="外でスタッフが資料を見せながら提案している写真">
+                                    <img src="<?php bloginfo('template_url');?>/img/c-flow-slim-img2.jpg" alt="外壁・屋根塗装のイメージ画像">
                                 </div>
                                 <div class="c-3col__item--body">
-                                    <h3 class="c-3col__item--title">見出し見出し見出し見出し</h3>
+                                    <h3 class="c-3col__item--title">施工事例テスト施工事例テスト</h3>
                                     <p class="c-3col__item--text">
-                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                        施工事例のテキストが入ります。施工事例のテキストが入ります。施工事例のテキストが…
                                     </p>
                                 </div>                                
                             </a>
@@ -293,12 +285,12 @@
                         <div class="c-3col__item">
                             <a href="<?php bloginfo('url'); ?>/works/exterior/">
                                 <div class="c-3col__item--img">
-                                    <img src="<?php bloginfo('template_url');?>/img/c-flow-slim-img3.jpg" alt="新築のように仕上がった白い家の外観">
+                                    <img src="<?php bloginfo('template_url');?>/img/c-flow-slim-img3.jpg" alt="外壁・屋根塗装のイメージ画像">
                                 </div>
                                 <div class="c-3col__item--body">
-                                    <h3 class="c-3col__item--title">見出し見出し見出し見出し</h3>
+                                    <h3 class="c-3col__item--title">施工事例テスト施工事例テスト</h3>
                                     <p class="c-3col__item--text">
-                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                        施工事例のテキストが入ります。施工事例のテキストが入ります。施工事例のテキストが…
                                     </p>
                                 </div>                                
                             </a>
@@ -308,7 +300,7 @@
             </div>
         </section>
 
-        <section class="exterior-cases c-3col">
+        <section class="roofing-cases c-3col">
             <div class="l-container">
                 <div class="c-3col__head">
                     <div class="c-title">
@@ -319,7 +311,7 @@
                 <div class="c-3col__inner">
                     <div class="c-3col__list">
                         <div class="c-3col__item">
-                            <a href="<?php bloginfo('url'); ?>/works/exterior/">
+                            <a href="<?php bloginfo('url'); ?>/works/roofing/">
                                 <div class="c-3col__item--img">
                                     <img src="<?php bloginfo('template_url');?>/img/c-service-img1.jpg" alt="施工事例のイメージ画像">
                                 </div>
@@ -336,7 +328,7 @@
                             </a>
                         </div>
                         <div class="c-3col__item">
-                            <a href="<?php bloginfo('url'); ?>/works/exterior/">
+                            <a href="<?php bloginfo('url'); ?>/works/roofing/">
                                 <div class="c-3col__item--img">
                                     <img src="<?php bloginfo('template_url');?>/img/c-service-img2.jpg" alt="施工事例のイメージ画像">
                                 </div>
@@ -353,7 +345,7 @@
                             </a>
                         </div>
                         <div class="c-3col__item">
-                            <a href="<?php bloginfo('url'); ?>/works/exterior/">
+                            <a href="<?php bloginfo('url'); ?>/works/roofing/">
                                 <div class="c-3col__item--img">
                                     <img src="<?php bloginfo('template_url');?>/img/c-service-img3.jpg" alt="施工事例のイメージ画像">
                                 </div>
@@ -382,7 +374,7 @@
             </div>
         </section>
 
-        <section class="exterior-faq c-faq">
+        <section class="roofing-faq c-faq">
             <div class="l-container">
                 <div class="c-faq__head">
                     <div class="c-title">
