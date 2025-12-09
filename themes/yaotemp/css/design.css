@@ -2318,4 +2318,39 @@ body {
 }
 .page-roofing .roofing-flow {
   background-color: #F1EBDF;
+}
+
+/* =================================================================
+  page-raingutter / 雨樋工事
+================================================================= */
+.page-raingutter .l-main {
+  padding: 0;
+}
+.page-raingutter .c-pagehead-set {
+  background-image: url(../img/raingutter-mv-bg.jpg);
+}
+@media screen and (max-width: 1280px) {
+  .page-raingutter .c-pagehead-set {
+    border-left: 0;
+  }
+}
+.page-raingutter .l-wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+.page-raingutter .c-parts-check {
+  background-color: #F1EBDF;
+}
+.page-raingutter .raingutter-ifCase {
+  background-color: #F1EBDF;
+}
+.page-raingutter .raingutter-repair .c-3col__list .c-3col__item .c-3col__item--body .c-3col__item--title {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  color: #00523f;
+}
+.page-raingutter .raingutter-flow {
+  background-color: #F1EBDF;
 }/*# sourceMappingURL=design.css.map */

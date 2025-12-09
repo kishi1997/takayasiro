@@ -2350,3 +2350,43 @@ body {
     background-color: #F1EBDF;
   }
 }
+
+/* =================================================================
+  page-raingutter / 雨樋工事
+================================================================= */
+.page-raingutter {
+  .l-main{
+    padding: 0;
+  }
+
+  .c-pagehead-set {
+		background-image: url(../img/raingutter-mv-bg.jpg);
+		@include max-screen($breakpoint-lg) {
+			border-left: 0;
+		}
+	}
+
+  .l-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .c-parts-check {
+    background-color: #F1EBDF;
+  }
+  .raingutter-ifCase {
+    background-color: #F1EBDF;
+  }
+  .raingutter-repair {
+    .c-3col__list .c-3col__item .c-3col__item--body .c-3col__item--title {
+      margin-top: 0;
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center;
+      color: $primary-color;
+    }
+  }
+  .raingutter-flow  {
+    background-color: #F1EBDF;
+  }
+}
