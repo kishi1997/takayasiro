@@ -180,7 +180,7 @@ body {
     justify-content: center;
     max-width: 100%;
     margin: 0 auto;
-    padding: 20px 11px 20px 32px;
+    padding: 8px 10px 8px 32px;
     font-size: 1.8rem;
     font-weight: 700;
     color: $green-color;
@@ -1555,27 +1555,168 @@ body {
   }
 }
 
-.c-service__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  border: none;
-  border-radius: 50%;
-  background-color: $green-color;
-  transform: rotate(90deg);
+/* =================================================================
+  c-service / サービス
+================================================================= */
+.c-service {
+  padding: 80px 0 120px;
+  background-color: #F1EBDF;
+  overflow-x: clip;
   @include max-screen($breakpoint-sm) {
-    width: 32px;
-    height: 32px;
+    padding: 60px 0;
   }
-}
-.c-service__button:hover {
-  border: 1px solid $green-color;
-  background-color: #fff;
-}
-.c-service__button:hover path {
-  fill: $green-color;
+
+  .c-service__head {
+    position: relative;
+  }
+
+  .c-service__head::before {
+    content: "";
+    position: absolute;
+    position: absolute;
+    top: -87px;
+    left: 22%;
+    width: 256px;
+    aspect-ratio: 256 / 113;
+    background-image: url("../img/c-service-illust-img1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include max-screen($breakpoint-md) {
+      left: 5%;
+      width: 200px;
+    }
+    @include max-screen($breakpoint-s) {
+      top: -88px;
+      left: 16px;
+      width: 133px;
+    }
+  }
+  .c-service__head::after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: 25%;
+    width: 132px;
+    aspect-ratio: 132 / 80;
+    background-image: url("../img/c-service-illust-img2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include max-screen($breakpoint-md) {
+      right: 5%;
+      width: 108px;
+    }
+    @include max-screen($breakpoint-s) {
+      top: -20px;
+      right: 16px;
+      width: 89px;
+    }
+  }
+
+  .l-container {
+    width: 1280px;
+    max-width: 100%;
+
+    .c-service__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 43px;
+      @include max-screen($breakpoint-md) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include max-screen($breakpoint-s) {
+        grid-template-columns: 1fr;
+        gap: 34px;
+      }
+
+      .c-service__card {
+        border-radius: 16px;
+        overflow: hidden;
+        background-color: #fff;
+
+        .c-service__figure {
+          @include max-screen($breakpoint-sm) {
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+          }
+
+          img {
+            @include max-screen($breakpoint-sm) {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+              display: block;
+            }
+          }
+        }
+
+        .c-service__card--body {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 30px 24px;
+          @include max-screen($breakpoint-sm) {
+            margin: 20px 16px;
+          }
+
+          .c-service__card--title {
+            font-size: 2.4rem;
+            font-weight: 700;
+            text-align: center;
+            color: $primary-color;
+            @include max-screen($breakpoint-sm) {
+              font-size: 2rem;
+            }
+          }
+
+          .c-service__button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 50%;
+            background-color: $green-color;
+            transform: rotate(90deg);
+            @include max-screen($breakpoint-sm) {
+              width: 32px;
+              height: 32px;
+            }
+          }
+          .c-service__button:hover {
+            border: 1px solid $green-color;
+            background-color: #fff;
+          }
+          .c-service__button:hover path {
+            fill: $green-color;
+          }
+        }
+      }
+    }
+  }
+  .c-service__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: $green-color;
+    transform: rotate(90deg);
+    @include max-screen($breakpoint-sm) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .c-service__button:hover {
+    border: 1px solid $green-color;
+    background-color: #fff;
+  }
+  .c-service__button:hover path {
+    fill: $green-color;
+  }
 }
 
 /* =================================================================
@@ -1982,145 +2123,6 @@ body {
       }
     }
   }
-  .c-service {
-    padding: 80px 0 120px;
-    background-color: #F1EBDF;
-    overflow-x: clip;
-    @include max-screen($breakpoint-sm) {
-      padding: 60px 0;
-    }
-
-    .c-service__head {
-      position: relative;
-      
-    }
-
-    .c-service__head::before {
-      content: "";
-      position: absolute;
-      position: absolute;
-      top: -87px;
-      left: 22%;
-      width: 256px;
-      aspect-ratio: 256 / 113;
-      background-image: url("../img/c-service-illust-img1.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      @include max-screen($breakpoint-md) {
-        left: 5%;
-        width: 200px;
-      }
-      @include max-screen($breakpoint-s) {
-        top: -88px;
-        left: 16px;
-        width: 133px;
-      }
-    }
-    .c-service__head::after {
-      content: "";
-      position: absolute;
-      top: -30px;
-      right: 25%;
-      width: 132px;
-      aspect-ratio: 132 / 80;
-      background-image: url("../img/c-service-illust-img2.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      @include max-screen($breakpoint-md) {
-        right: 5%;
-        width: 108px;
-      }
-      @include max-screen($breakpoint-s) {
-        top: -20px;
-        right: 16px;
-        width: 89px;
-      }
-    }
-
-    .l-container {
-      width: 1280px;
-      max-width: 100%;
-
-      .c-service__list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 43px;
-        @include max-screen($breakpoint-md) {
-          grid-template-columns: repeat(2, 1fr);
-        }
-        @include max-screen($breakpoint-s) {
-          grid-template-columns: 1fr;
-          gap: 34px;
-        }
-
-        .c-service__card {
-          border-radius: 16px;
-          overflow: hidden;
-          background-color: #fff;
-
-          .c-service__figure {
-            @include max-screen($breakpoint-sm) {
-              aspect-ratio: 16 / 9;
-              overflow: hidden;
-            }
-
-            img {
-              @include max-screen($breakpoint-sm) {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: center;
-                display: block;
-              }
-            }
-          }
-
-          .c-service__card--body {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 30px 24px;
-            @include max-screen($breakpoint-sm) {
-              margin: 20px 16px;
-            }
-
-            .c-service__card--title {
-              font-size: 2.4rem;
-              font-weight: 700;
-              text-align: center;
-              color: $primary-color;
-              @include max-screen($breakpoint-sm) {
-                font-size: 2rem;
-              }
-            }
-
-            .c-service__button {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              width: 50px;
-              height: 50px;
-              border: none;
-              border-radius: 50%;
-              background-color: $green-color;
-              transform: rotate(90deg);
-              @include max-screen($breakpoint-sm) {
-                width: 32px;
-                height: 32px;
-              }
-            }
-            .c-service__button:hover {
-              border: 1px solid $green-color;
-              background-color: #fff;
-            }
-            .c-service__button:hover path {
-              fill: $green-color;
-            }
-          }
-        }
-      }
-    }  
-  }
 }
 
 /* =================================================================
@@ -2388,5 +2390,171 @@ body {
   }
   .raingutter-flow  {
     background-color: #F1EBDF;
+  }
+}
+
+/* =================================================================
+  page-price / 料金情報
+================================================================= */
+.page-price {
+  .l-main{
+    padding: 0;
+  }
+
+  .c-pagehead-set {
+		background-image: url(../img/price-mv-bg.jpg);
+		@include max-screen($breakpoint-lg) {
+			border-left: 0;
+		}
+	}
+
+  .l-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .price-info {
+    padding: 80px 0;
+    @include max-screen($breakpoint-sm) {
+      padding: 60px 0;
+    }
+
+    .l-container {
+      max-width: 100%;
+      padding: 0;
+    }
+
+    .price-info__head {
+      @include max-screen($breakpoint-md) {
+        padding: 0 4%;
+      }
+    }
+
+    .price-info__linkList {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 50px;
+      @include max-screen($breakpoint-md) {
+        gap: 24px;
+        padding: 0 4%;
+      }
+      
+      li {
+        margin: 0 40px 10px 0;
+        @include max-screen($breakpoint-md) {
+          margin: 0;
+        }
+        @include max-screen($breakpoint-s) {
+          width: 70%;
+        }
+      }
+    }
+    .priceBox {
+      padding: 80px 0;
+      @include max-screen($breakpoint-sm) {
+        padding: 60px 0;
+      }
+
+      .price-info--jp {
+        display: flex;
+        margin-bottom: 24px;
+        flex-direction: column;
+        gap: 24px;
+        font-size: 3.6rem;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: $primary-color;
+      }
+      .price-info--en {
+        display: block;
+        margin-bottom: 80px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-family: "Work Sans", sans-serif;
+        color: $orange-color;
+        letter-spacing: 0.2em;
+        text-align: center;
+        line-height: 1;
+      }
+
+      .price-info__menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        max-width: 1200px;
+        margin-inline: auto;
+        @include max-screen($breakpoint-md) {
+          grid-template-columns: 1fr;
+          padding: 0 4%;
+        }
+
+        .price-info__item {
+          display: grid;
+          grid-template-columns: minmax(0, 180px) 1fr;
+          gap: 23px;
+          padding: 16px;
+          background: #fff;
+          border-radius: 8px;
+          border: 1px solid #DADADA;
+          box-shadow: 6px 7px 0px 0px #00000040;
+          @include max-screen($breakpoint-lg) {
+            grid-template-columns: minmax(0, 300px) 1fr;
+          }
+          @include max-screen($breakpoint-md) {
+            grid-template-columns: minmax(0, 200px) 1fr;
+          }
+          @include max-screen($breakpoint-sm) {
+            grid-template-columns: 1fr;
+          }
+
+          .price-info__item--img {
+            border-radius: 8px;
+            overflow: hidden;
+
+            img {
+              aspect-ratio: 180 / 203;
+              height: 100%;
+              object-fit: cover;
+              @include max-screen($breakpoint-sm) {
+                aspect-ratio: 3 / 2;
+              }
+            }
+          }
+
+          .price-info__item--body {
+            .price-info__item--title {
+              display: block;
+              margin: 16px 0;
+              font-weight: 700;
+              font-size: 2rem;
+              color: $primary-color;
+            }
+  
+            .price-info__item--text {
+              margin-bottom: 40px;
+              font-weight: 500;
+            }
+            .price-info__item--price {
+              margin-bottom: 4px;
+              font-size: 4rem;
+              font-weight: 700;
+              color: $orange-color;
+  
+              span {
+                font-size: 2.6rem;
+              }
+            }
+            .price-info__item--tax {
+              color: $orange-color;
+            }
+          }
+        }
+      }
+    }
+    .priceBox:nth-of-type(even) {
+      background: #f1ebdf;
+    }
   }
 }

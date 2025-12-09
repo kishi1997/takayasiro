@@ -264,7 +264,7 @@
                         </a>
                     </div>
                     <div class="c-service__card">
-                        <a href="<?php bloginfo('url'); ?>/service/roof/">
+                        <a href="<?php bloginfo('url'); ?>/service/roofing/">
                             <figure class="c-service__figure">
                                 <img src="<?php bloginfo('template_url');?>/img/c-service-img2.jpg" alt="屋根・外壁工事のイメージ画像">
                             </figure>
