@@ -853,8 +853,8 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	aspect-ratio: 4.6;
-	width: 100%;
-  max-width: 1360px;
+  width: 94%;
+  max-width: 1440px;
   margin-inline: auto;
   margin-bottom: 40px;
 	padding: 0;
@@ -1556,6 +1556,152 @@ body {
 }
 
 /* =================================================================
+  c-message / 代表挨拶
+================================================================= */
+.c-message {
+  display: flex;
+  padding: 100px 0;
+  @include max-screen($breakpoint-sm) {
+    padding: 40px 0 82px;
+  }
+
+  .l-container {
+    display: flex;
+    gap: 75px;
+    width: 1280px;
+    max-width: 100%;
+    @include max-screen($breakpoint-lg) {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .c-message__left {
+      flex: 1;
+
+      .c-title {
+        margin-bottom: 40px;
+        text-align: left;
+
+        .c-title--en {
+          position: relative;
+          display: inline-block;
+          font-size: 3rem;
+          font-weight: 500;
+          font-family: $font-Work-sans;
+          color: $orange-color;
+          letter-spacing: 0.2em;
+          line-height: 1;
+          @include max-screen($breakpoint-sm) {
+            display: block;
+            margin-bottom: 30px;
+            font-size: 2rem;
+          }
+        }
+        .c-title--en::after {
+          content: "";
+          position: absolute;
+          top: -14px;
+          left: 240px;
+          width: 113px;
+          aspect-ratio: 113 / 100;
+          background-image: url("../img/c-message-illust-img1.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          @include max-screen($breakpoint-s) {
+            top: -32px;
+            right: 20px;
+            width: 112px;
+          }
+        }
+
+        .c-title--jp {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          margin-bottom: 56px;
+          font-size: 3.6rem;
+          font-weight: 500;
+          letter-spacing: 0.05em;
+          line-height: 1.8;
+          color: $primary-color;
+          @include max-screen($breakpoint-sm) {
+            font-size: 2rem;
+          }
+        }
+        .c-title__desc {
+          font-size: 1.6rem;
+          font-weight: 500;
+          line-height: 2;
+        }
+      }
+      .c-message__rep {
+        width: fit-content;
+        padding: 0px 10px;
+        color: #fff;
+        background-color: $primary-color;
+        border-radius: 8px;
+
+        @include max-screen($breakpoint-s) {
+          width: 100%;
+          padding: 1px 10px 2px;
+        }
+
+        .c-message__rep--label {
+          padding-right: 3px;
+          font-weight: 700;
+        }
+        .c-message__name--jp {
+          padding-right: 3px;
+          font-size: 2.4rem;
+          font-weight: 700;
+          @include max-screen($breakpoint-lg) {
+            font-size: 2.1rem;
+          }
+        }
+        .c-message__name--en {
+          font-size: 1.5rem;
+          font-weight: 300;
+        }
+      }
+    }
+    .c-message__right {
+      flex: 0 0 640px;
+      @include max-screen($breakpoint-sm) {
+        flex: 1;
+      }
+      
+      .c-message__figure {
+        position: relative;
+        
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: auto;
+          border-radius: 16px;
+          overflow: hidden;
+        }
+      }
+      .c-message__figure::after {
+        content: "";
+        position: absolute;
+        bottom: -50px;
+        right: 26px;
+        width: 238px;
+        aspect-ratio: 238 / 184;
+        background-image: url("../img/c-message-illust-img2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        @include max-screen($breakpoint-sm) {
+          width: 142px;
+          bottom: -32px;
+          right: 9px;
+        }
+      }
+    }
+  }
+}
+
+/* =================================================================
   c-service / サービス
 ================================================================= */
 .c-service {
@@ -1978,149 +2124,6 @@ body {
     .l-container {
       width: 1280px;
       max-width: 100%;
-    }
-  }
-
-  .about-message {
-    display: flex;
-    padding: 100px 0;
-    @include max-screen($breakpoint-sm) {
-      padding: 40px 0 82px;
-    }
-
-    .l-container {
-      display: flex;
-      gap: 75px;
-      width: 1280px;
-      max-width: 100%;
-      @include max-screen($breakpoint-lg) {
-        flex-direction: column;
-        gap: 40px;
-      }
-
-      .about-message__left {
-        flex: 1;
-
-        .c-title {
-          margin-bottom: 40px;
-          text-align: left;
-
-          .c-title--en {
-            position: relative;
-            display: inline-block;
-            font-size: 3rem;
-            font-weight: 500;
-            font-family: $font-Work-sans;
-            color: $orange-color;
-            letter-spacing: 0.2em;
-            line-height: 1;
-            @include max-screen($breakpoint-sm) {
-              display: block;
-              margin-bottom: 30px;
-              font-size: 2rem;
-            }
-          }
-          .c-title--en::after {
-            content: "";
-            position: absolute;
-            top: -14px;
-            left: 240px;
-            width: 113px;
-            aspect-ratio: 113 / 100;
-            background-image: url("../img/about-message-illust-img1.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            @include max-screen($breakpoint-s) {
-              top: -32px;
-              right: 20px;
-              width: 112px;
-            }
-          }
-
-          .c-title--jp {
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-            margin-bottom: 56px;
-            font-size: 3.6rem;
-            font-weight: 500;
-            letter-spacing: 0.05em;
-            line-height: 1.8;
-            color: $primary-color;
-            @include max-screen($breakpoint-sm) {
-              font-size: 2rem;
-            }
-          }
-          .c-title__desc {
-            font-size: 1.6rem;
-            font-weight: 500;
-            line-height: 2;
-          }
-        }
-        .about-message__rep {
-          width: fit-content;
-          padding: 0px 10px;
-          color: #fff;
-          background-color: $primary-color;
-          border-radius: 8px;
-
-          @include max-screen($breakpoint-s) {
-            width: 100%;
-            padding: 1px 10px 2px;
-          }
-
-          .about-message__rep--label {
-            padding-right: 3px;
-            font-weight: 700;
-          }
-          .about-message__name--jp {
-            padding-right: 3px;
-            font-size: 2.4rem;
-            font-weight: 700;
-            @include max-screen($breakpoint-lg) {
-              font-size: 2.1rem;
-            }
-          }
-          .about-message__name--en {
-            font-size: 1.5rem;
-            font-weight: 300;
-          }
-        }
-      }
-      .about-message__right {
-        flex: 0 0 640px;
-        @include max-screen($breakpoint-sm) {
-          flex: 1;
-        }
-        
-        .about-message__figure {
-          position: relative;
-          
-          img {
-            object-fit: cover;
-            width: 100%;
-            height: auto;
-            border-radius: 16px;
-            overflow: hidden;
-          }
-        }
-        .about-message__figure::after {
-          content: "";
-          position: absolute;
-          bottom: -50px;
-          right: 26px;
-          width: 238px;
-          aspect-ratio: 238 / 184;
-          background-image: url("../img/about-message-illust-img2.png");
-          background-size: contain;
-          background-repeat: no-repeat;
-          @include max-screen($breakpoint-sm) {
-            width: 142px;
-            bottom: -32px;
-            right: 9px;
-          }
-        }
-      }
     }
   }
 }
@@ -2555,6 +2558,274 @@ body {
     }
     .priceBox:nth-of-type(even) {
       background: #f1ebdf;
+    }
+  }
+}
+
+/* =================================================================
+  page-company / 会社概要
+================================================================= */
+.page-company {
+  .l-main{
+    padding: 0;
+  }
+
+  .c-pagehead-set {
+		background-image: url(../img/company-mv-bg.jpg);
+		@include max-screen($breakpoint-lg) {
+			border-left: 0;
+		}
+	}
+
+  .l-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .company-story {
+    background: #f1ebdf;
+
+    .l-container {
+      display: flex;
+      gap: 75px;
+      width: 1280px;
+      max-width: 100%;
+      @include max-screen($breakpoint-lg) {
+        flex-direction: column-reverse;
+        gap: 40px;
+      }
+      @include max-screen($breakpoint-sm) {
+        gap: 10px;
+      }
+
+      .company-story__left {
+        flex: 0 0 500px;
+        @include max-screen($breakpoint-lg) {
+          display: flex;
+          flex: 1;
+        }
+
+        .company-story__figure {
+          border-radius: 16px;
+          overflow: hidden;
+        }
+        .company-story__figure:nth-child(1) {
+          margin-right: 24px;
+          @include max-screen($breakpoint-lg) {
+            margin: 0;
+          }
+        }
+        .company-story__figure:nth-child(2) {
+          display: inline-block;
+          margin-top: -16px;
+          transform: scale(0.7);
+          transform-origin: right center;
+          @include max-screen($breakpoint-lg) {
+            margin: 0;
+            transform: scale(0.86);
+          }
+        }
+      }
+      .company-story__right {
+        flex: 1;
+
+        .c-title {
+          text-align: left;
+          @include max-screen($breakpoint-lg) {
+            margin-bottom: 30px;
+          }
+
+          .c-title--en {
+            position: relative;
+            display: inline-block;
+            font-size: 3rem;
+            @include max-screen($breakpoint-sm) {
+              display: block;
+              margin-bottom: 30px;
+              font-size: 2rem;
+            }
+          }
+          .c-title--en::after {
+            content: "";
+            position: absolute;
+            top: -14px;
+            right: -160px;
+            width: 113px;
+            aspect-ratio: 113 / 100;
+            background-image: url(../img/company-story-illust-img1.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            @include max-screen($breakpoint-s) {
+              top: 48px;
+              right: 20px;
+              width: 112px;
+            }
+          }
+          .c-title--jp {
+            margin-bottom: 56px;
+            @include max-screen($breakpoint-sm) {
+              font-size: 2rem;
+            }
+          }
+
+          .c-title__desc {
+            line-height: 2;
+            font-weight: 500;
+            @include max-screen($breakpoint-sm) {
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .company-about {
+    padding: 80px 0;
+    @include max-screen($breakpoint-sm) {
+      padding: 60px 0;
+    }
+
+    .l-container {
+      max-width: 1080px;
+    }
+
+    .company-about__head {
+      .c-title__desc {
+        @include max-screen($breakpoint-sm) {
+          text-align: left;
+          line-height: 1.7;
+        }
+      }
+    }
+    
+    .company-about__list {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      .company-about__item {
+        display: grid;
+        grid-template-columns: 1fr minmax(0, 120px);
+        align-items: end;
+        gap: 32px;
+        padding: 40px 36px;
+        background: #fff;
+        border-radius: 16px;
+        border: 1px solid #DADADA;
+        @include max-screen($breakpoint-sm) {
+          grid-template-columns: 1fr;
+          padding: 20px;
+        }
+
+        .company-about__item--img {
+          @include max-screen($breakpoint-sm) {
+            width: 30%;
+            margin-left: auto;
+          }
+        }
+
+        h3 {
+          margin-bottom: 32px;
+          font-size: 2.4rem;
+          font-weight: 700;
+          color: $primary-color;
+          @include max-screen($breakpoint-sm) {
+            font-size: 2rem;
+          }
+        }
+        p {
+          font-size: 1.8rem;
+          font-weight: 500;
+          line-height: 1.7;
+          @include max-screen($breakpoint-sm) {
+            font-size: 1.6rem;
+          }
+        }
+        ul {
+          display: flex;
+          gap: 32px;
+          padding-left: 20px;
+          flex-direction: column;
+          font-weight: 500;
+          font-size: 1.8rem;
+          line-height: 1.7;
+
+          li {
+            list-style: disc;
+          }
+        }
+      }
+    }
+  }
+  .company-profile {
+    padding: 80px 0;
+    background: #FFF;
+    @include max-screen($breakpoint-sm) {
+      padding: 60px 0;
+    }
+
+    #Company-table {
+      max-width: 720px;
+      margin-inline: auto;
+      margin-bottom: 0;
+
+      dl {
+        @include max-screen($breakpoint-sm) {
+          flex-direction: column;
+        }
+      }
+
+      dt,
+      dd {
+        font-size: 1.8rem;
+        border-bottom: 2px solid $orange-color;
+        color: $base-text;
+        @include max-screen($breakpoint-sm) {
+          flex: 1;
+        }
+      }
+
+      dt {
+        width: 20%;
+        font-weight: 700;
+        @include max-screen($breakpoint-sm) {
+          width: 100%;
+          padding: 20px;
+        }
+      }
+      dd {
+        width: 80%;
+        border-bottom: 2px solid #DADADA;
+        line-height: 1.7;
+        padding: 30px 40px;
+        @include max-screen($breakpoint-sm) {
+          width: 100%;
+          padding: 20px;
+        }
+      }
+    }
+  }
+  .company-accses {
+    padding: 80px 0;
+    background: #FFF;
+    @include max-screen($breakpoint-sm) {
+      padding: 60px 0;
+    }
+
+    #Company-accses {
+      max-width: 1080px;
+      margin-inline: auto;
+
+      .company-map {
+        text-align: center;
+      }
+      .company-accessinfo {
+        table th,
+        table td {
+          font-size: 100%;
+        }
+      }
     }
   }
 }

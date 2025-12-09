@@ -205,9 +205,9 @@
             </div>
         </section>
 
-        <section class="about-message c-2col">
+        <section class="c-message c-2col">
             <div class="l-container">
-                <div class="about-message__left">
+                <div class="c-message__left">
                     <div class="c-title">
                         <span class="c-title--en">MESSAGE</span>
                         <h2 class="c-title--jp">
@@ -220,15 +220,15 @@
                             「こんなのどこへ頼めばいいかわからない」と困っていられる方は、是非お待ちしております。
                         </p>
                     </div>
-                    <div class="about-message__rep">
-                        <span class="about-message__rep--label">代表</span>
-                        <span class="about-message__name--jp">小笹 正幸</span>
-                        <span class="about-message__name--en">Masayuki Kosasa</span>
+                    <div class="c-message__rep">
+                        <span class="c-message__rep--label">代表</span>
+                        <span class="c-message__name--jp">小笹 正幸</span>
+                        <span class="c-message__name--en">Masayuki Kosasa</span>
                     </div>
                 </div>
-                <div class="about-message__right">
-                    <figure class="about-message__figure">
-                        <img src="<?php bloginfo('template_url');?>/img/about-message-img1.jpg" alt="たかやしろ住研 代表 小笹正幸">
+                <div class="c-message__right">
+                    <figure class="c-message__figure">
+                        <img src="<?php bloginfo('template_url');?>/img/c-message-img1.jpg" alt="たかやしろ住研 代表 小笹正幸">
                     </figure>
                 </div>
             </div>

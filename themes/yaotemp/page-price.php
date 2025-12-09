@@ -90,7 +90,7 @@
                         <div class="price-info__menu">
                             <div class="price-info__item">
                                 <figure class="price-info__item--img">
-                                    <img src="<?php bloginfo('template_url');?>/img/price-info-img1.jpg" alt="">
+                                    <img src="<?php bloginfo('template_url');?>/img/price-info-img1.jpg" alt="外壁塗装の施工イメージ写真">
                                 </figure>
                                 <div class="price-info__item--body">
                                     <span class="price-info__item--title">メニュー名メニュー名メニュー名</span>
@@ -105,7 +105,7 @@
                             </div>
                             <div class="price-info__item">
                                 <figure class="price-info__item--img">
-                                    <img src="<?php bloginfo('template_url');?>/img/price-info-img2.jpg" alt="">
+                                    <img src="<?php bloginfo('template_url');?>/img/price-info-img2.jpg" alt="外壁塗装の施工イメージ写真">
                                 </figure>
                                 <div class="price-info__item--body">
                                     <span class="price-info__item--title">メニュー名メニュー名メニュー名</span>
@@ -126,7 +126,7 @@
                         <div class="price-info__menu">
                             <div class="price-info__item">
                                 <figure class="price-info__item--img">
-                                    <img src="<?php bloginfo('template_url');?>/img/price-info-img3.jpg" alt="">
+                                    <img src="<?php bloginfo('template_url');?>/img/price-info-img3.jpg" alt="屋根塗装の施工イメージ写真">
                                 </figure>
                                 <div class="price-info__item--body">
                                     <span class="price-info__item--title">メニュー名メニュー名メニュー名</span>
@@ -141,7 +141,7 @@
                             </div>
                             <div class="price-info__item">
                                 <figure class="price-info__item--img">
-                                    <img src="<?php bloginfo('template_url');?>/img/price-info-img4.jpg" alt="">
+                                    <img src="<?php bloginfo('template_url');?>/img/price-info-img4.jpg" alt="屋根塗装の施工イメージ写真">
                                 </figure>
                                 <div class="price-info__item--body">
                                     <span class="price-info__item--title">メニュー名メニュー名メニュー名</span>
@@ -162,7 +162,7 @@
                         <div class="price-info__menu">
                             <div class="price-info__item">
                                 <figure class="price-info__item--img">
-                                    <img src="<?php bloginfo('template_url');?>/img/price-info-img5.jpg" alt="">
+                                    <img src="<?php bloginfo('template_url');?>/img/price-info-img5.jpg" alt="外壁工事の施工イメージ写真">
                                 </figure>
                                 <div class="price-info__item--body">
                                     <span class="price-info__item--title">メニュー名メニュー名メニュー名</span>
@@ -177,7 +177,7 @@
                             </div>
                             <div class="price-info__item">
                                 <figure class="price-info__item--img">
-                                    <img src="<?php bloginfo('template_url');?>/img/price-info-img6.jpg" alt="">
+                                    <img src="<?php bloginfo('template_url');?>/img/price-info-img6.jpg" alt="外壁工事の施工イメージ写真">
                                 </figure>
                                 <div class="price-info__item--body">
                                     <span class="price-info__item--title">メニュー名メニュー名メニュー名</span>
@@ -198,7 +198,7 @@
                         <div class="price-info__menu">
                             <div class="price-info__item">
                                 <figure class="price-info__item--img">
-                                    <img src="<?php bloginfo('template_url');?>/img/price-info-img7.jpg" alt="">
+                                    <img src="<?php bloginfo('template_url');?>/img/price-info-img7.jpg" alt="屋根工事の施工イメージ写真">
                                 </figure>
                                 <div class="price-info__item--body">
                                     <span class="price-info__item--title">メニュー名メニュー名メニュー名</span>
@@ -213,7 +213,7 @@
                             </div>
                             <div class="price-info__item">
                                 <figure class="price-info__item--img">
-                                    <img src="<?php bloginfo('template_url');?>/img/price-info-img8.jpg" alt="">
+                                    <img src="<?php bloginfo('template_url');?>/img/price-info-img8.jpg" alt="屋根工事の施工イメージ写真">
                                 </figure>
                                 <div class="price-info__item--body">
                                     <span class="price-info__item--title">メニュー名メニュー名メニュー名</span>
@@ -234,7 +234,7 @@
                         <div class="price-info__menu">
                             <div class="price-info__item">
                                 <figure class="price-info__item--img">
-                                    <img src="<?php bloginfo('template_url');?>/img/price-info-img9.jpg" alt="">
+                                    <img src="<?php bloginfo('template_url');?>/img/price-info-img9.jpg" alt="雨樋工事の施工イメージ写真">
                                 </figure>
                                 <div class="price-info__item--body">
                                     <span class="price-info__item--title">メニュー名メニュー名メニュー名</span>
@@ -249,7 +249,7 @@
                             </div>
                             <div class="price-info__item">
                                 <figure class="price-info__item--img">
-                                    <img src="<?php bloginfo('template_url');?>/img/price-info-img10.jpg" alt="">
+                                    <img src="<?php bloginfo('template_url');?>/img/price-info-img10.jpg" alt="雨樋工事の施工イメージ写真">
                                 </figure>
                                 <div class="price-info__item--body">
                                     <span class="price-info__item--title">メニュー名メニュー名メニュー名</span>
