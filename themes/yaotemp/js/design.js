@@ -136,9 +136,6 @@ $(function () {
     });
   });
 
-  /* ------------------------------------
-   * タブ切り替え処理（修正なし：そのまま利用可）
-   * ------------------------------------ */
   $(".top-blog__tab").on("click", function () {
     var targetId = $(this).data("target");
     var $targetWrapper = $(targetId); // IDはラッパーについている
