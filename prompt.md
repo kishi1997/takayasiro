@@ -80,3 +80,4 @@ git rm themes/yaotemp/css/design.css
 git rm themes/yaotemp/css/design.scss
 git rm themes/yaotemp/css/design.css.map
 git rm themes/yaotemp/home.php
+git rm themes/yaotemp/js/design.js
