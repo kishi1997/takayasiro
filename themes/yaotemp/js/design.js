@@ -8,11 +8,13 @@ $(function () {
 });
 // ハンバーガーメニュー
 $(function () {
+  const body = document.querySelector("body");
   const btn = document.querySelector(".js-button");
   const menu = document.querySelector(".js-open-menu");
 
   btn.addEventListener("click", () => {
     const isOpen = menu.classList.toggle("is-open");
+    body.classList.toggle("is-active");
     btn.classList.toggle("is-active");
     btn.setAttribute("aria-expanded", isOpen);
   });
@@ -64,14 +66,6 @@ $(function () {
   });
 });
 
-//クリックしたら開閉
-$(function () {
-  $(".click-title").on("click", function () {
-    $(this).next().slideToggle(400);
-    $(this).toggleClass("close", 400);
-  });
-});
-
 document.addEventListener("DOMContentLoaded", function () {
   // すべての質問要素を取得します
   const faqQuestions = document.querySelectorAll(".c-faq__question");
@@ -87,6 +81,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+//クリックしたら開閉
+$(function () {
+  $(".click-title").on("click", function () {
+    $(this).next().slideToggle(400);
+    $(this).toggleClass("close", 400);
+  });
+});
+
 // headerの高さを計測して、bodyのpading-topにその値を追加
 function adjustBodyPadding() {
   const body = document.body;
@@ -107,4 +109,64 @@ window.addEventListener("scroll", () => {
   } else {
     header.classList.add("scroll");
   }
+});
+
+$(function () {
+  // 各スライダーラッパーに対して処理を実行
+  $(".top-blog__slider-wrapper").each(function () {
+    // 自身の配下にあるスライダー要素
+    var $slider = $(this).find(".js-slick-blog");
+    // 自身の配下にある矢印要素
+    var $prevBtn = $(this).find(".top-blog__arrow--prev");
+    var $nextBtn = $(this).find(".top-blog__arrow--next");
+
+    $slider.slick({
+      dots: false,
+      arrows: true,
+      // ここで自作ボタンを指定
+      prevArrow: $prevBtn,
+      nextArrow: $nextBtn,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1080,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+  });
+
+  $(".top-blog__tab").on("click", function () {
+    var targetId = $(this).data("target");
+    var $targetWrapper = $(targetId); // IDはラッパーについている
+    var $targetSlider = $targetWrapper.find(".js-slick-blog");
+
+    if ($(this).hasClass("is-active")) return false;
+
+    $(".top-blog__tab").removeClass("is-active");
+    $(this).addClass("is-active");
+
+    // すべてのラッパーを隠す
+    $(".top-blog__slider-wrapper").hide();
+
+    // ターゲットを表示＆再計算
+    $targetWrapper.css("opacity", 0).show();
+    $targetSlider.slick("setPosition");
+    $targetWrapper.animate({ opacity: 1 }, 300);
+  });
 });
