@@ -8,11 +8,13 @@ $(function () {
 });
 // ハンバーガーメニュー
 $(function () {
+  const body = document.querySelector("body");
   const btn = document.querySelector(".js-button");
   const menu = document.querySelector(".js-open-menu");
 
   btn.addEventListener("click", () => {
     const isOpen = menu.classList.toggle("is-open");
+    body.classList.toggle("is-active");
     btn.classList.toggle("is-active");
     btn.setAttribute("aria-expanded", isOpen);
   });
@@ -72,176 +74,6 @@ $(function () {
   });
 });
 
-// YouTubeモーダルここから
-document.addEventListener("DOMContentLoaded", (event) => {
-  // videoThumbのclass名がつく要素を全取得
-  let imgTags = document.getElementsByClassName("videoThumb");
-  // ループ
-  for (let i = 0; i < imgTags.length; i++) {
-    let videoId = imgTags[i].getAttribute("data-video-id");
-    imgTags[i].src = `https://img.youtube.com/vi/${videoId}/0.jpg`;
-    imgTags[i].addEventListener("click", function () {
-      openModal(videoId);
-    });
-  }
-
-  // モーダルの要素を作成
-  let modal = document.createElement("div");
-  modal.id = "modal";
-  modal.style.display = "none";
-  modal.style.position = "fixed";
-  modal.style.zIndex = "3";
-  modal.style.left = "0";
-  modal.style.top = "0";
-  modal.style.width = "100%";
-  modal.style.height = "100%";
-  modal.style.overflow = "auto";
-  modal.style.backgroundColor = "rgba(0,0,0,0.4)";
-  modal.addEventListener("click", function (event) {
-    if (event.target === modal) {
-      closeModal();
-    }
-  });
-  // modalContentの要素を作成
-  let modalContent = document.createElement("div");
-  modalContent.className = "modalContent";
-  // iframeのYouTube要素を作成
-  let videoPlayer = document.createElement("iframe");
-  videoPlayer.id = "videoPlayer";
-  videoPlayer.width = "560";
-  videoPlayer.height = "315";
-  videoPlayer.frameBorder = "0";
-  videoPlayer.allow =
-    "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
-  videoPlayer.allowFullscreen = true;
-  // 閉じるボタンを作成
-  let closeBtn = document.createElement("button");
-  closeBtn.className = "closeBtn";
-  closeBtn.addEventListener("click", closeModal);
-
-  modalContent.appendChild(videoPlayer);
-  modalContent.appendChild(closeBtn);
-  modal.appendChild(modalContent);
-  document.body.appendChild(modal);
-});
-// モーダルモーダル関数
-function openModal(videoId) {
-  let modal = document.getElementById("modal");
-  let videoPlayer = document.getElementById("videoPlayer");
-
-  videoPlayer.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-  modal.style.display = "block";
-}
-// モーダルを閉じる関数を作成
-function closeModal() {
-  let modalContent = document.querySelector(".modalContent");
-  modalContent.style.animation = "fadeOut 0.7s";
-
-  setTimeout(function () {
-    let modal = document.getElementById("modal");
-    let videoPlayer = document.getElementById("videoPlayer");
-
-    videoPlayer.src = "";
-    modal.style.display = "none";
-    //Reset the animation so it plays on the next open
-    modalContent.style.animation = "fadeIn 0.7s";
-  }, 700);
-}
-
-// YouTubeモーダルここまで
-// .top-staff / PERFORMANCE スライド
-$(function () {
-  $(".top-staff__list").slick({
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    arrows: true,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 600,
-    fade: false,
-    dots: false,
-    prevArrow: $(".c-slick__arrows--prev"),
-    nextArrow: $(".c-slick__arrows--next"),
-    responsive: [
-      {
-        breakpoint: 1080,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
-});
-
-//下層ページ - feature
-$(function () {
-  $(".feature-staff__list").slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: true,
-    infinite: true,
-    autoplay: false,
-    fade: false,
-    dots: false,
-    prevArrow: $(".c-slick__arrows--prev"),
-    nextArrow: $(".c-slick__arrows--next"),
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
-});
-
-// 画像拡大
-$(function () {
-  $(".gallery").modaal({
-    type: "image",
-  });
-});
-document.addEventListener("DOMContentLoaded", function () {
-  // すべての質問要素を取得します
-  const faqQuestions = document.querySelectorAll(".top-faq__question");
-
-  // 各質問要素に対してクリックイベントを設定します
-  faqQuestions.forEach(function (question) {
-    question.addEventListener("click", function () {
-      // クリックされた質問の親要素(.top-faq__item)を取得します
-      const item = this.closest(".top-faq__item");
-
-      // is-openクラスを付けたり外したりします
-      item.classList.toggle("is-open");
-    });
-  });
-});
 // headerの高さを計測して、bodyのpading-topにその値を追加
 function adjustBodyPadding() {
   const body = document.body;
@@ -262,4 +94,67 @@ window.addEventListener("scroll", () => {
   } else {
     header.classList.add("scroll");
   }
+});
+
+$(function () {
+  // 各スライダーラッパーに対して処理を実行
+  $(".top-blog__slider-wrapper").each(function () {
+    // 自身の配下にあるスライダー要素
+    var $slider = $(this).find(".js-slick-blog");
+    // 自身の配下にある矢印要素
+    var $prevBtn = $(this).find(".top-blog__arrow--prev");
+    var $nextBtn = $(this).find(".top-blog__arrow--next");
+
+    $slider.slick({
+      dots: false,
+      arrows: true,
+      // ここで自作ボタンを指定
+      prevArrow: $prevBtn,
+      nextArrow: $nextBtn,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1080,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+  });
+
+  /* ------------------------------------
+   * タブ切り替え処理（修正なし：そのまま利用可）
+   * ------------------------------------ */
+  $(".top-blog__tab").on("click", function () {
+    var targetId = $(this).data("target");
+    var $targetWrapper = $(targetId); // IDはラッパーについている
+    var $targetSlider = $targetWrapper.find(".js-slick-blog");
+
+    if ($(this).hasClass("is-active")) return false;
+
+    $(".top-blog__tab").removeClass("is-active");
+    $(this).addClass("is-active");
+
+    // すべてのラッパーを隠す
+    $(".top-blog__slider-wrapper").hide();
+
+    // ターゲットを表示＆再計算
+    $targetWrapper.css("opacity", 0).show();
+    $targetSlider.slick("setPosition");
+    $targetWrapper.animate({ opacity: 1 }, 300);
+  });
 });
