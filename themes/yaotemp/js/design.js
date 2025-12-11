@@ -66,6 +66,21 @@ $(function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  // すべての質問要素を取得します
+  const faqQuestions = document.querySelectorAll(".c-faq__question");
+
+  // 各質問要素に対してクリックイベントを設定します
+  faqQuestions.forEach(function (question) {
+    question.addEventListener("click", function () {
+      // クリックされた質問の親要素(.c-faq__item)を取得します
+      const item = this.closest(".c-faq__item");
+
+      // is-openクラスを付けたり外したりします
+      item.classList.toggle("is-open");
+    });
+  });
+});
 //クリックしたら開閉
 $(function () {
   $(".click-title").on("click", function () {
@@ -136,9 +151,6 @@ $(function () {
     });
   });
 
-  /* ------------------------------------
-   * タブ切り替え処理（修正なし：そのまま利用可）
-   * ------------------------------------ */
   $(".top-blog__tab").on("click", function () {
     var targetId = $(this).data("target");
     var $targetWrapper = $(targetId); // IDはラッパーについている
