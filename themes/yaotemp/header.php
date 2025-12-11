@@ -33,7 +33,7 @@
                             <div class="tel-icon">
                                 <img src="<?php bloginfo('template_url');?>/img/ico-tel.png" alt="電話アイコン">
                             </div>
-                            <a href="tel:044-789-5830">044-789-5830</a>
+                            <a href="tel:0269-23-2658">0269-23-2658</a>
                         </div>
                         <span>営業時間/9:00-18:00（定休日/水曜日）</span>
                     </div>
@@ -124,9 +124,9 @@
                                     <p class="header-open__contact--title">お電話でのお問い合わせ</p>
                                     <p>
                                         <img src="<?php bloginfo('template_url');?>/img/ico-tel.png" alt="電話アイコン">
-                                        <a href="tel:048-580-4188">048-580-4188</a>
+                                        <a href="tel:0269-23-2658">0269-23-2658</a>
                                     </p>
-                                    <p class="header-open__contact--time">営業時間/9:00-18:00 定休日/火曜・水曜</p>
+                                    <p class="header-open__contact--time">営業時間/13:00-18:00 土日祝休</p>
                                 </div>
                                 <div class="header-open__contact--item header-open__contact--mail">
                                     <a href="<?php bloginfo('url'); ?>/contact/">
