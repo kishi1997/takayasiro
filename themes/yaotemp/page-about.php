@@ -65,7 +65,8 @@
                                 <h3 class="c-2col__item--title">しつこい営業は、絶対にしません。</h3>
                                 <span class="c-2col__item--tag">しつこさゼロ、誠実対応。</span>
                                 <p class="c-2col__item--text">
-                                    私たちの役目は、お客様の「困った」を解決すること。ご納得いただくまで、契約を急かすことは決してありません。
+                                    ご検討中のお客様が一番不安に思われるのは、「見積もりを取ったら、しつこく勧誘されるのではないか」ということではないでしょうか。 たかやしろ住研では、そのような営業行為は一切いたしません。なぜなら、私たちの役割は「契約を取ること」ではなく、お客様の住まいの「困りごとを解決すること」だからです。<br>
+                                    無料診断やお見積りの提出後、私たちから契約を迫るようなお電話や訪問は行いません。「今すぐ決めてくれたら安くします」といった駆け引きもいたしません。 ご家族でじっくりと話し合い、心からご納得いただいたタイミングでご連絡ください。 「今回は見送ります」という場合でも、気兼ねなく仰ってください。私たちは、お客様が安心して判断できる材料を、誠実に提供することをお約束します。
                                 </p>
                                 <div class="c-2col__item--illust u-pc">
                                     <img src="<?php bloginfo('template_url');?>/img/about-reason-illust-img1.png"
@@ -87,7 +88,8 @@
                                 </h3>
                                 <span class="c-2col__item--tag">専属スタッフが、最初から最後まで。</span>
                                 <p class="c-2col__item--text">
-                                    ご相談から施工管理、アフターフォローまで、専属のスタッフが一貫して責任を持って担当。途中で担当が変わる不安はありません。
+                                    大手ハウスメーカーや一般的なリフォーム会社では、「契約までの営業担当」「現場を管理する監督」「実際に作業する職人」が別々であることが少なくありません。その結果、「営業担当に伝えたはずの要望が、現場の職人に伝わっていない」「担当者がコロコロ変わり、誰に相談すればいいか分からない」といったトラブルが起きがちです。<br>
+                                    たかやしろ住研では、ご相談を承った専属のスタッフが、現地調査、お見積り、現場管理、そしてお引渡しまでを一貫して担当いたします。 お客様の想いやこだわりを最初から最後までしっかりと共有し、現場に直結させることで、「思っていたのと違う」というズレを防ぎます。 「この人に任せれば大丈夫」。そう思っていただけるよう、責任を持って担当させていただきます。
                                 </p>
                                 <div class="c-2col__item--illust u-pc">
                                     <img src="<?php bloginfo('template_url');?>/img/about-reason-illust-img2.png"
@@ -109,7 +111,8 @@
                                 </h3>
                                 <span class="c-2col__item--tag">施工後から、真のお付き合い。</span>
                                 <p class="c-2col__item--text">
-                                    何かあればすぐに駆けつけます。1年後も5年後も、「頼んでよかった」とお客様に感謝していただける仕事をすることが私たちの誇りです。
+                                    工事が終わってお引渡しをしたら、それで終わりではありません。私たちたかやしろ住研は、地元・長野に根ざす工務店として、施工後もお客様の大切なお住まいを末永く見守り続けます。<br>
+                                    「扉の調子が少し悪い気がする」「使い方が分からない設備がある」 そんな些細なことでも、遠慮なくご連絡ください。すぐに駆けつけられる距離にいること、そしてフットワークの軽さが私たちの強みです。 1年後も、5年後も、10年後も。お住まいのことで何かあった時に、一番に顔を思い出していただける「家のかかりつけ医」でありたいと願っています。
                                 </p>
                                 <div class="c-2col__item--illust u-pc">
                                     <img src="<?php bloginfo('template_url');?>/img/about-reason-illust-img3.png"
@@ -145,8 +148,7 @@
                                     目指します
                                 </h3>
                                 <p class="c-2col__item--text">
-                                    かかりつけ医とは、あなたやご家族の病気のことについて親身になってみてくれるお医者さんのことです。
-                                    日頃から患者の体質や病歴、健康状態を把握し、診療行為のほか健康管理上のアドバイスなどもしてくれる身近な医師のこと。<br>
+                                    かかりつけ医とは、あなたやご家族の病気のことについて親身になってみてくれるお医者さんのことです。 日頃から患者の体質や病歴、健康状態を把握し、診療行為のほか健康管理上のアドバイスなどもしてくれる身近な医師のこと。<br>
                                     常日頃から患者の状況をくわしく把握しているので、いざというとき適切に対応し、対応が困難な場合は専門医を紹介してくれます。<br>
                                     このかかりつけ医の住宅版を目指し、たかやしろ住研は行動しています。
                                 </p>
@@ -262,7 +264,7 @@
                 <div class="l-container">
                     <div class="c-service__list">
                         <div class="c-service__card">
-                            <a href="<?php bloginfo('url'); ?>/service/exterior/">
+                            <a href="<?php bloginfo('url'); ?>/tosou/">
                                 <figure class="c-service__figure">
                                     <img src="<?php bloginfo('template_url');?>/img/c-service-img1.jpg"
                                         alt="外壁・屋根塗装のイメージ画像">
@@ -280,7 +282,7 @@
                             </a>
                         </div>
                         <div class="c-service__card">
-                            <a href="<?php bloginfo('url'); ?>/service/roof/">
+                            <a href="<?php bloginfo('url'); ?>/kouji/">
                                 <figure class="c-service__figure">
                                     <img src="<?php bloginfo('template_url');?>/img/c-service-img2.jpg"
                                         alt="屋根・外壁工事のイメージ画像">
@@ -298,7 +300,7 @@
                             </a>
                         </div>
                         <div class="c-service__card">
-                            <a href="<?php bloginfo('url'); ?>/service/raingutter/">
+                            <a href="<?php bloginfo('url'); ?>/amadoi/">
                                 <figure class="c-service__figure">
                                     <img src="<?php bloginfo('template_url');?>/img/c-service-img3.jpg"
                                         alt="雨樋工事のイメージ画像">

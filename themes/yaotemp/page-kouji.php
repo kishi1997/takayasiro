@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-<div class="page-roofing">
+<div class="page-kouji">
     <div class="c-pagehead-set">
         <div class="c-pagehead-text">
             <h1><?php the_title(); ?></h1>
-            <p><?php echo $slug = get_post(get_the_ID())->post_name; ?></p>
+            <p>CONSTRUCTION</p>
         </div>
     </div>
 
@@ -42,9 +42,9 @@
                 </div>
             </section>
 
-            <section class="roofing-worries c-parts-check">
+            <section class="kouji-worries c-parts-check">
                 <div class="l-container">
-                    <div class="roofing-worries__head">
+                    <div class="kouji-worries__head">
                         <div class="c-title">
                             <h2 class="c-title--jp">こんなお悩みありませんか？</h2>
                             <span class="c-title--en">DO YOU HAVE THESE CONCERNS?</span>
@@ -70,8 +70,8 @@
                 </div>
             </section>
 
-            <section class="roofing-point c-2col c-2col_media">
-                <div class="roofing-point__head">
+            <section class="kouji-point c-2col c-2col_media">
+                <div class="kouji-point__head">
                     <div class="c-title">
                         <h2 class="c-title--jp">なぜ「塗装」ではなく「工事」が必要か</h2>
                         <span class="c-title--en">WHY PAINTING IS NOT ENOUGH</span>
@@ -82,7 +82,7 @@
                     <div class="c-2col__list">
                         <article class="c-2col__item">
                             <figure class="c-2col__item--img">
-                                <img src="<?php bloginfo('template_url');?>/img/roofing-point-img1.jpg"
+                                <img src="<?php bloginfo('template_url');?>/img/kouji-point-img1.jpg"
                                     alt="施工されたスレート屋根の表面">
                             </figure>
                             <div class="c-2col__item--body">
@@ -100,7 +100,7 @@
 
                         <article class="c-2col__item">
                             <figure class="c-2col__item--img">
-                                <img src="<?php bloginfo('template_url');?>/img/roofing-point-img2.jpg" alt="和風住宅の瓦屋根">
+                                <img src="<?php bloginfo('template_url');?>/img/kouji-point-img2.jpg" alt="和風住宅の瓦屋根">
                             </figure>
                             <div class="c-2col__item--body">
                                 <p class="c-2col__item--label">POINT2</p>
@@ -119,7 +119,7 @@
 
                         <article class="c-2col__item">
                             <figure class="c-2col__item--img">
-                                <img src="<?php bloginfo('template_url');?>/img/roofing-point-img3.jpg"
+                                <img src="<?php bloginfo('template_url');?>/img/kouji-point-img3.jpg"
                                     alt="白い外壁のモダンな住宅外観">
                             </figure>
                             <div class="c-2col__item--body">
@@ -140,8 +140,8 @@
                 </div>
             </section>
 
-            <section class="roofing-ifCase c-2col c-2col_reverse">
-                <div class="roofing-ifCase__head">
+            <section class="kouji-ifCase c-2col c-2col_reverse">
+                <div class="kouji-ifCase__head">
                     <div class="c-title">
                         <h2 class="c-title--jp">もし放置すると？</h2>
                         <span class="c-title--en">IF LEFT UNATTENDED</span>
@@ -152,7 +152,7 @@
                     <div class="c-2col__list">
                         <article class="c-2col__item">
                             <figure class="c-2col__item--img">
-                                <img src="<?php bloginfo('template_url');?>/img/roofing-ifCase-img1.jpg"
+                                <img src="<?php bloginfo('template_url');?>/img/kouji-ifCase-img1.jpg"
                                     alt="天井にできた雨漏りのシミ">
                             </figure>
                             <div class="c-2col__item--body">
@@ -168,7 +168,7 @@
                         </article>
                         <article class="c-2col__item">
                             <figure class="c-2col__item--img">
-                                <img src="<?php bloginfo('template_url');?>/img/roofing-ifCase-img2.jpg"
+                                <img src="<?php bloginfo('template_url');?>/img/kouji-ifCase-img2.jpg"
                                     alt="小屋裏に見える雨漏りの水濡れ跡">
                             </figure>
                             <div class="c-2col__item--body">
@@ -185,8 +185,8 @@
                 </div>
             </section>
 
-            <section class="roofing-method c-2col">
-                <div class="roofing-method__head">
+            <section class="kouji-method c-2col">
+                <div class="kouji-method__head">
                     <div class="c-title">
                         <h2 class="c-title--jp">選べる2つの工法</h2>
                         <span class="c-title--en">TWO METHODS TO CHOOSE FROM</span>
@@ -194,44 +194,51 @@
                 </div>
 
                 <div class="l-container">
-                    <div class="roofing-method__list">
-                        <div class="roofing-method__item">
-                            <div class="roofing-method__img">
-                                <img src="<?php bloginfo('template_url');?>/img/roofing-method-img1.jpg" alt="">
+                    <div class="kouji-method__list">
+                        <div class="kouji-method__item">
+                            <div class="kouji-method__img">
+                                <img src="<?php bloginfo('template_url');?>/img/kouji-method-img1.jpg" alt="屋根カバー工法による新しい屋根材の施工中の様子">
                             </div>
-                            <div class="roofing-method__content">
+                            <div class="kouji-method__content">
                                 <span class="bg-number">01</span>
-                                <h3 class="roofing-method__content--title">
+                                <h3 class="kouji-method__content--title">
                                     カバー工法
                                 </h3>
-                                <p class="roofing-method__content--text">
-                                    既存の屋根や外壁を撤去せず、その上から新しい防水シートと屋根材（外壁材）を重ねて張る工法です。
-                                    【メリット】 古い建材の撤去・処分費用がかからないため、費用を抑えることができます。また、屋根が二重になることで断熱性や遮音性が向上します。
-                                    【おすすめの方】 費用を抑えたい方、工期を短くしたい方。</p>
+                                <p class="kouji-method__content--text">
+                                    既存の屋根や外壁を撤去せず、その上から新しい防水シートと屋根材（外壁材）を重ねて張る工法です。<br>
+                                    <br>
+                                    <span class="bg-orange">メリット</span><br>
+                                    古い建材の撤去・処分費用がかからないため、費用を抑えることができます。また、屋根が二重になることで断熱性や遮音性が向上します。<br>
+                                    <br>
+                                    <span class="bg-orange">おすすめの方</span><br>
+                                    費用を抑えたい方、工期を短くしたい方。</p>
                             </div>
                         </div>
 
-                        <div class="roofing-method__item">
-                            <div class="roofing-method__img">
-                                <img src="<?php bloginfo('template_url');?>/img/roofing-method-img2.jpg" alt="">
+                        <div class="kouji-method__item">
+                            <div class="kouji-method__img">
+                                <img src="<?php bloginfo('template_url');?>/img/kouji-method-img2.jpg" alt="葺き替えを施工している屋根全体の様子">
                             </div>
-                            <div class="roofing-method__content">
+                            <div class="kouji-method__content">
                                 <span class="bg-number">02</span>
-                                <h3 class="roofing-method__content--title">
+                                <h3 class="kouji-method__content--title">
                                     葺き替え（張り替え）
                                 </h3>
-                                <p class="roofing-method__content--text">
-                                    既存の屋根や外壁をすべて撤去し、下地から新しいものに交換する工法です。
-                                    【メリット】
-                                    下地（野地板など）の状態を目視で確認し、傷んでいる部分を補修できるため、お住まいの健康状態を完璧にリセットできます。屋根の軽量化による耐震対策にも最適です。
-                                    【おすすめの方】 雨漏りが進行している方、築年数が古く下地が心配な方、耐震性を高めたい方。 </p>
+                                <p class="kouji-method__content--text">
+                                    既存の屋根や外壁をすべて撤去し、下地から新しいものに交換する工法です。<br>
+                                    <br>
+                                    <span class="bg-orange">メリット</span><br>
+                                    下地（野地板など）の状態を目視で確認し、傷んでいる部分を補修できるため、お住まいの健康状態を完璧にリセットできます。屋根の軽量化による耐震対策にも最適です。<br>
+                                    <br>
+                                    <span class="bg-orange">おすすめの方</span><br>
+                                     雨漏りが進行している方、築年数が古く下地が心配な方、耐震性を高めたい方。 </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="roofing-flow c-flow-slim c-3col">
+            <section class="kouji-flow c-flow-slim c-3col">
                 <div class="l-container">
                     <div class="c-flow-slim__head">
                         <div class="c-title">
@@ -280,59 +287,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="c-3col__inner">
-                        <div class="c-3col__list">
-                            <div class="c-3col__item">
-                                <a href="<?php bloginfo('url'); ?>/works/exterior/">
-                                    <div class="c-3col__item--img">
-                                        <img src="<?php bloginfo('template_url');?>/img/c-flow-slim-img1.jpg"
-                                            alt="外壁・屋根塗装のイメージ画像">
-                                    </div>
-                                    <div class="c-3col__item--body">
-                                        <h3 class="c-3col__item--title">見出し見出し見出し見出し
-                                            見出し見出し見出し見出し見出し</h3>
-                                        <p class="c-3col__item--text">
-                                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="c-3col__item">
-                                <a href="<?php bloginfo('url'); ?>/works/exterior/">
-                                    <div class="c-3col__item--img">
-                                        <img src="<?php bloginfo('template_url');?>/img/c-flow-slim-img2.jpg"
-                                            alt="外壁・屋根塗装のイメージ画像">
-                                    </div>
-                                    <div class="c-3col__item--body">
-                                        <h3 class="c-3col__item--title">見出し見出し見出し見出し
-                                            見出し見出し見出し見出し見出し</h3>
-                                        <p class="c-3col__item--text">
-                                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="c-3col__item">
-                                <a href="<?php bloginfo('url'); ?>/works/exterior/">
-                                    <div class="c-3col__item--img">
-                                        <img src="<?php bloginfo('template_url');?>/img/c-flow-slim-img3.jpg"
-                                            alt="外壁・屋根塗装のイメージ画像">
-                                    </div>
-                                    <div class="c-3col__item--body">
-                                        <h3 class="c-3col__item--title">見出し見出し見出し見出し
-                                            見出し見出し見出し見出し見出し</h3>
-                                        <p class="c-3col__item--text">
-                                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </section>
 
-            <section class="roofing-cases c-3col">
+            <section class="kouji-cases c-3col">
                 <div class="l-container">
                     <div class="c-3col__head">
                         <div class="c-title">
@@ -343,7 +301,7 @@
                     <div class="c-3col__inner">
                         <div class="c-3col__list">
                             <div class="c-3col__item">
-                                <a href="<?php bloginfo('url'); ?>/works/roofing/">
+                                <a href="<?php bloginfo('url'); ?>/works/kouji/">
                                     <div class="c-3col__item--img">
                                         <img src="<?php bloginfo('template_url');?>/img/c-service-img1.jpg"
                                             alt="施工事例のイメージ画像">
@@ -361,7 +319,7 @@
                                 </a>
                             </div>
                             <div class="c-3col__item">
-                                <a href="<?php bloginfo('url'); ?>/works/roofing/">
+                                <a href="<?php bloginfo('url'); ?>/works/kouji/">
                                     <div class="c-3col__item--img">
                                         <img src="<?php bloginfo('template_url');?>/img/c-service-img2.jpg"
                                             alt="施工事例のイメージ画像">
@@ -379,7 +337,7 @@
                                 </a>
                             </div>
                             <div class="c-3col__item">
-                                <a href="<?php bloginfo('url'); ?>/works/roofing/">
+                                <a href="<?php bloginfo('url'); ?>/works/kouji/">
                                     <div class="c-3col__item--img">
                                         <img src="<?php bloginfo('template_url');?>/img/c-service-img3.jpg"
                                             alt="施工事例のイメージ画像">
@@ -409,7 +367,7 @@
                 </div>
             </section>
 
-            <section class="roofing-faq c-faq">
+            <section class="kouji-faq c-faq">
                 <div class="l-container">
                     <div class="c-faq__head">
                         <div class="c-title">
