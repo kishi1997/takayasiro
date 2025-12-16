@@ -4,7 +4,7 @@
     <div class="c-pagehead-set">
         <div class="c-pagehead-text">
             <h1><?php the_title(); ?></h1>
-            <p><?php echo $slug = get_post(get_the_ID())->post_name; ?></p>
+            <p>COMPANY</p>
         </div>
     </div>
 

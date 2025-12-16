@@ -40,21 +40,33 @@
                     <nav class="header-nav">
                         <ul class="header-nav__list">
                             <li>
-                                <a href="<?php bloginfo('url'); ?>/feature/">たかやしろ住研について</a>
+                                <a href="<?php bloginfo('url'); ?>/about/">たかやしろ住研について</a>
+                            </li>
+                            <li class="header-nav__link">
+                                <p>サービス</p>
+                                <div class="header-nav__dropDown">
+                                    <ul class="header-nav__dropDown--list">
+                                        <li>
+                                            <a href="<?php bloginfo('url'); ?>/tosou/">外壁・屋根塗装</a>
+                                        </li>
+                                        <li>
+                                            <a href="<?php bloginfo('url'); ?>/kouji/">屋根工事・外壁工事</a>
+                                        </li>
+                                        <li>
+                                            <a href="<?php bloginfo('url'); ?>/amadoi/">雨樋工事 </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li>
-                                <a href="<?php bloginfo('url'); ?>/performance/">サービス</a>
+                                <a href="<?php bloginfo('url'); ?>/price/">料金情報</a>
                             </li>
                             <li>
-                                <a href="<?php bloginfo('url'); ?>/company/">料金情報</a>
+                                <a href="<?php bloginfo('url'); ?>/works/">施工事例＆お客様の声</a>
                             </li>
                             <li>
-                                <a href="<?php bloginfo('url'); ?>/company/">施工事例＆お客様の声</a>
+                                <a href="<?php bloginfo('url'); ?>/company-profile/">会社概要</a>
                             </li>
-                            <li>
-                                <a href="<?php bloginfo('url'); ?>/company/">会社概要</a>
-                            </li>
-                        </ul>
                         <div class="header-nav__contact">
                             <a class="c-btn u-bg-orange" href="<?php bloginfo('url'); ?>/contact/">お問い合わせ</a>
                             <a class="c-btn u-bg-line" href="<?php bloginfo('url'); ?>//">展示予約</a>
@@ -87,10 +99,10 @@
                                     <li>
                                         <p>サービス</p>
                                         <ul class="header-child__menu">
-                                            <li><a href="<?php bloginfo('url'); ?>/service/painting/">外壁・屋根塗装</a></li>
-                                            <li><a href="<?php bloginfo('url'); ?>/service/roof-wall/">屋根工事・外壁工事</a>
+                                            <li><a href="<?php bloginfo('url'); ?>/tosou/">外壁・屋根塗装</a></li>
+                                            <li><a href="<?php bloginfo('url'); ?>/kouji/">屋根工事・外壁工事</a>
                                             </li>
-                                            <li><a href="<?php bloginfo('url'); ?>/service/gutter/">雨樋工事</a></li>
+                                            <li><a href="<?php bloginfo('url'); ?>/amadoi/">雨樋工事</a></li>
                                         </ul>
                                     </li>
 
@@ -113,7 +125,7 @@
                                     </li>
 
                                     <!-- 会社概要 -->
-                                    <li><a href="<?php bloginfo('url'); ?>/company/">会社概要</a></li>
+                                    <li><a href="<?php bloginfo('url'); ?>/company-profile/">会社概要</a></li>
 
                                     <!-- お問い合わせ -->
                                     <li><a href="<?php bloginfo('url'); ?>/contact/">お問い合わせ</a></li>

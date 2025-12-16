@@ -107,23 +107,22 @@
                                     class="l-footer__nav-link l-footer__nav-link--head u-font-bold">トップページ</a>
                             </li>
                             <li class="l-footer__nav-item">
-                                <a href="<?php bloginfo('url'); ?>/works/"
+                                <a href="<?php bloginfo('url'); ?>/about/"
                                     class="l-footer__nav-link l-footer__nav-link--head">たかやしろ住研について</a>
                             </li>
                             <li class="l-footer__nav-item">
-                                <a href="<?php bloginfo('url'); ?>/works/"
-                                    class="l-footer__nav-link l-footer__nav-link--head">サービス</a>
+                                <p>サービス</p>
                                 <ul class="l-footer__sub-list">
                                     <li class="l-footer__sub-item"><a
-                                            href="<?php bloginfo('url'); ?>/works/">外壁・屋根塗装</a></li>
+                                            href="<?php bloginfo('url'); ?>/tosou/">外壁・屋根塗装</a></li>
                                     <li class="l-footer__sub-item"><a
-                                            href="<?php bloginfo('url'); ?>/works/">屋根工事・外壁工事</a></li>
-                                    <li class="l-footer__sub-item"><a href="<?php bloginfo('url'); ?>/works/">雨樋工事</a>
+                                            href="<?php bloginfo('url'); ?>/kouji/">屋根工事・外壁工事</a></li>
+                                    <li class="l-footer__sub-item"><a href="<?php bloginfo('url'); ?>/amadoi/">雨樋工事</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="l-footer__nav-item">
-                                <a href="<?php bloginfo('url'); ?>/works/"
+                                <a href="<?php bloginfo('url'); ?>/price/"
                                     class="l-footer__nav-link l-footer__nav-link--head">料金情報</a>
                             </li>
                         </ul>
@@ -137,23 +136,23 @@
                                     class="l-footer__nav-link l-footer__nav-link--head">施工事例＆お客様の声</a>
                             </li>
                             <li class="l-footer__nav-item">
-                                <a href="<?php bloginfo('url'); ?>/works/"
+                                <a href="<?php bloginfo('url'); ?>/staffblog/"
                                     class="l-footer__nav-link l-footer__nav-link--head">ブログ</a>
                                 <ul class="l-footer__sub-list">
                                     <li class="l-footer__sub-item"><a href="<?php bloginfo('url'); ?>/works/">お知らせ</a>
                                     </li>
                                     <li class="l-footer__sub-item"><a
-                                            href="<?php bloginfo('url'); ?>/works/">お役立ちコラム</a></li>
+                                            href="<?php bloginfo('url'); ?>/column/">お役立ちコラム</a></li>
                                     <li class="l-footer__sub-item"><a
-                                            href="<?php bloginfo('url'); ?>/works/">スタッフブログ</a></li>
+                                            href="<?php bloginfo('url'); ?>/staffblog/">スタッフブログ</a></li>
                                 </ul>
                             </li>
                             <li class="l-footer__nav-item">
-                                <a href="<?php bloginfo('url'); ?>/works/"
+                                <a href="<?php bloginfo('url'); ?>/company-profile/"
                                     class="l-footer__nav-link l-footer__nav-link--head">会社概要</a>
                             </li>
                             <li class="l-footer__nav-item">
-                                <a href="<?php bloginfo('url'); ?>/works/"
+                                <a href="<?php bloginfo('url'); ?>contact/"
                                     class="l-footer__nav-link l-footer__nav-link--head">お問い合わせ</a>
                             </li>
                         </ul>
